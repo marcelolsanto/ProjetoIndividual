@@ -16,7 +16,6 @@
     width: 100%;
     position: fixed;
     z-index: 4;
-
 }
 .head_imag{
     height: 150px;
@@ -54,9 +53,10 @@
     text-shadow: 0 0 5px rgba(85, 84, 84, 
     0.3);
 }
-.section_home {
+#home {
     height: 100vh;
     width: 100%;
+    overflow: auto;
 }
 .home_imag{
     height: 100vh;
@@ -103,9 +103,10 @@ p{
     border-radius: 7px;
     box-align: center;
 }
-.section_sobre {
+#sobre {
     height: 100vh;
     width: 100%;
+    overflow: auto;
 }
 .sobre_imag{
     height: 100vh;
@@ -130,9 +131,10 @@ p{
     border-radius: 7px;
     box-align: center;
 }
-.section_portfolio{
+#portfolio{
     height: 100vh;
     width: 100%;
+    overflow: auto;
 }
 .portfolio_imag{
     height: 100vh;
@@ -157,9 +159,10 @@ p{
     border-radius: 7px;
     box-align: center;
 }
-.section_contato{
+#contato{
     height: 100vh;
     width: 100%;
+    overflow: auto;
 }
 .contato_imag{
     height: 100vh;

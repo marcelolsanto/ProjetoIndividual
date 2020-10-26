@@ -11,7 +11,19 @@ function enviar() {
         btn2.style.display = 'none';
         mensagem.innerHTML = `<h2>Olá ${nome}!<br> Aguarde nosso o contato!</h2>`;
 }
-function rolar_home() {
+function scroll_home() {
     var elmnt = document.getElementById("home");
-    elmnt.scrollIntoView();
+    elmnt.scrollIntoView(true);
+  }
+  function scroll_sobre() {
+    var elmnt = document.getElementById("sobre");
+    elmnt.scrollIntoView(true);
+  }
+  function scroll_portfolio() {
+    var elmnt = document.getElementById("portfolio");
+    elmnt.scrollIntoView(true);
+  }
+  function scroll_contato() {
+    var elmnt = document.getElementById("contato");
+    elmnt.scrollIntoView(true);
   }
