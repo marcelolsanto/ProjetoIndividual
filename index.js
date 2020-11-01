@@ -1,4 +1,4 @@
-function enviar() {
+    function enviar() {
     var email = in_email.value;
     var nome = in_nome.value;
     var celular = in_celular;
@@ -9,21 +9,21 @@ function enviar() {
         in_email.style.display = 'none';
         btn1.style.display = 'none';
         btn2.style.display = 'none';
-        mensagem.innerHTML = `<h2>Olá ${nome}!<br> Aguarde nosso o contato!</h2>`;
+        mensagem.innerHTML = `<p>Olá ${nome}!<br> Aguarde nosso o contato!</p>`;
 }
 function scroll_home() {
     var elmnt = document.getElementById("home");
-    elmnt.scrollIntoView(true);
+    elmnt.scrollIntoView();
   }
   function scroll_sobre() {
     var elmnt = document.getElementById("sobre");
-    elmnt.scrollIntoView(true);
+    elmnt.scrollIntoView();
   }
   function scroll_portfolio() {
     var elmnt = document.getElementById("portfolio");
-    elmnt.scrollIntoView(true);
+    elmnt.scrollIntoView();
   }
   function scroll_contato() {
     var elmnt = document.getElementById("contato");
-    elmnt.scrollIntoView(true);
+    elmnt.scrollIntoView();
   }

@@ -10,25 +10,25 @@
 <body>
     <div class="container">
         <div class="section_head">
-            <div class="head_imag">
-                <img src="marcelo.jpg">
+            <div class="head_imag" onclick="scroll_sobre()">
+                <img src="marcelo.jpg" >
             </div>
             <nav class="head_menu">
                 <ul class="menu">
-                    <li class="menu_item">
-                        <a onclick="scroll_home()" href="#home"class="menu-link">
+                    <li class="menu_item" onclick="scroll_home()">
+                        <a href="home"class="menu-link">
                         </a>Home
                     </li>
-                    <li class="menu_item">
-                        <a  onclick="scroll_sobre()"  href="#sobre"class="menu-link">
+                    <li class="menu_item" onclick="scroll_sobre()">
+                        <a  href="sobre"class="menu-link">
                         </a>Sobre
                     </li>
-                    <li class="menu_item">
-                        <a  onclick="scroll_portfolio()" href="#portfolio" class="menu-link">
+                    <li class="menu_item" onclick="scroll_portfolio()">
+                        <a href="portfolio" class="menu-link">
                         </a>Portfólio
                     </li>
-                    <li class="menu_item">
-                            <a  onclick="scroll_contato()" href="#contato"class="menu-link">
+                    <li class="menu_item" onclick="scroll_contato()">
+                            <a href="contato"class="menu-link">
                             </a>Contato
                     </li>
                 </ul>
@@ -42,7 +42,7 @@
                     <h3>Seja bem vindo!</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat corporis provident quam, voluptatibus consequatur natus quis veniam ipsam maiores molestias nobis laboriosam molestiae maxime. Fugit magni vitae veniam aperiam? Sed.</p>
                     <input class="mail" placeholder="Digite seu e-mail!" id="in_email">
-                    <button id="btn1" class="btn_home">Enviar!
+                    <button onclick="enviar()" id="btn1" class="btn_home">Enviar!
                     </button>
                 </div>
 
@@ -54,7 +54,7 @@
                     <div class="banner_sobre">
                         <h3>Quem somos nós !</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat corporis provident quam, voluptatibus consequatur natus quis veniam ipsam maiores molestias nobis laboriosam molestiae maxime. Fugit magni vitae veniam aperiam? Sed.</p>
-                        <button class="btn_home">Conheça mais!</button>
+                        <button onclick="scroll_portfolio()" class="btn_home" >Conheça mais!</button>
                     </div>
 
         </div>
@@ -65,7 +65,7 @@
                     <div class="banner_portfolio">
                         <h3>Conheça os nossos Projetos!</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat corporis provident quam, voluptatibus consequatur natus quis veniam ipsam maiores molestias nobis laboriosam molestiae maxime. Fugit magni vitae veniam aperiam? Sed.</p>
-                        <button class="btn_portfolio">Conheça mais!</button>
+                        <button class="btn_portfolio" onclick="scroll_contato()">Entre em contato!</button>
                     </div>
 
         </div>
@@ -76,43 +76,13 @@
                     <div class="banner_contato">
                         <h3 id="mensagem" >Entre em contato!</h3>
                         <input class="mail" placeholder="Digite seu Nome!" id="in_nome">
-                        <input class="mail" placeholder="Digite seu celular!" id="in_celular">
+                        <input class="mail1" placeholder="Digite seu celular!" id="in_celular">
                         <input class="mail" placeholder="Digite seu e-mail!" id="in_email2"><br>
-                        <button id="btn2" class="btn_home">Enviar!
+                        <button onclick="enviar()"id="btn2" class="btn_home">Enviar!
                         </button>
                     </div>
                 </div>
     </div>
+    <script src="index.js"></script>
 </body>
 </html>
-<script>
-    function enviar() {
-    var email = in_email.value;
-    var nome = in_nome.value;
-    var celular = in_celular;
-        alert(`O seu contato foi enviado com sucesso!`);
-        in_nome.style.display = 'none';
-        in_celular.style.display = 'none';
-        in_email2.style.display = 'none';
-        in_email.style.display = 'none';
-        btn1.style.display = 'none';
-        btn2.style.display = 'none';
-        mensagem.innerHTML = `<h2>Olá ${nome}!<br> Aguarde nosso o contato!</h2>`;
-}
-function scroll_home() {
-    var elmnt = document.getElementById("home");
-    elmnt.scrollIntoView();
-  }
-  function scroll_sobre() {
-    var elmnt = document.getElementById("sobre");
-    elmnt.scrollIntoView();
-  }
-  function scroll_portfolio() {
-    var elmnt = document.getElementById("portfolio");
-    elmnt.scrollIntoView();
-  }
-  function scroll_contato() {
-    var elmnt = document.getElementById("contato");
-    elmnt.scrollIntoView();
-  }
-</script>
