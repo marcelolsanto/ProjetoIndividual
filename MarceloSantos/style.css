@@ -292,3 +292,11 @@ p{
     position: fixed;
     top: 0px;
 }
+.fas fa-angle-down{
+    height: 100px;
+    width: 100px;
+    align-items: center;
+    bottom: 30px;
+    position: relative;
+    color: rgb(255, 81, 81);
+}
