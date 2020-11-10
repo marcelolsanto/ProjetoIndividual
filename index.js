@@ -27,3 +27,7 @@ function scroll_home() {
     var element = document.getElementById("cadastro");
     element.scrollIntoView();
   }
+  function scroll_login() {
+    var element = document.getElementById("login");
+    element.scrollIntoView();
+  }

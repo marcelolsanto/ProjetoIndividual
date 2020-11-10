@@ -32,6 +32,10 @@
                         <a href="cadastro"class="menu-link">
                         </a>Cadastro
                     </li>
+                    <li class="menu_item">
+                        <a class="menu-link" href="/home/marcelo/Documentos/MarceloSantos/login.html">
+                        </a>Login
+                    </li>
                 </ul>
             </nav>
         </header>
@@ -45,8 +49,8 @@
                     <h3>Portfólios de Projetos</h3>
                     <p>Nesta página iremos visualizar algunsprojetos de móveis planejados que eudesenvolvia quando trabalhava como design deinteriores e projetista de móveis!</p>
                     <div>
-                        <input class="mail" placeholder="Digite seu e-mail!" id="in_email">
-                        <button onclick="enviar()" id="btn1"class="btn_home">Enviar!
+                        <input class="mail" placeholder="Digite seu e-mail!" id="in_email" type="email">
+                        <button onclick="enviar()" id="btn1"class="btn_home" type="submit">Receba Notícias!
                         </button>
                     </div>
                 </div>
@@ -88,20 +92,23 @@
         </section>
         <div class="suspiro"></div>
         <section class="section_cadastro" id="cadastro">
-            <div class="cadastro_imag">
-                <img src="escritório.jpg">
-            </div>
-            <div class="banner_cadastro">
-                <h3 id="mensagem" >Faça seu cadastro!</h3>
-                <input class="mail" placeholder="Digite seu Nome!" id="in_nome">
-                <input class="mail1" placeholder="Digite seu celular!" id="in_celular">
-                <input class="mail" placeholder="Digite seu e-mail!" id="in_email2">
-                <button onclick="enviar()"id="btn2"class="btn_home">Enviar!
-                </button>
-            </div>
-        </section>
+                <div class="cadastro_imag">
+                    <img src="escritório.jpg">
+                </div>
+                <form action="" method="post" class="banner_cadastro">
+                    <h3 id="mensagem" >Faça seu cadastro!</h3>
+                            <input class="mail1" placeholder="Digite seu CPF!" id="in_cpf" type="number">
+                            <input class="mail1" placeholder="Digite seu Nome!" id="in_nome">
+                            <input class="mail1" placeholder="Digite seu celular!" id="in_celular">
+                            <input class="mail1" placeholder="Digite seu e-mail!" id="in_email2">
+                            <input class="mail1" placeholder="Digite sua senha!" id="in_senha" type="password">
+                            <input class="mail1" placeholder="confirme sua senha!" id="in_confirma" type="password">
+                    <button onclick="cadastrar()"id="btn2"class="btn_home">Cadastrar!
+                    </button>
+                </form>
+            </section>
         <footer class="footer">
-            <p>Feito por Marcelo Santos, aluno Bandtec 2020</p>
+            <p>Feito por Marcelo Santos, aluno BandTec&COPY; 2020</p>
         </footer>
     </div>
 </body>
