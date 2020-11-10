@@ -12,18 +12,18 @@
         mensagem.innerHTML = `<p>Olá ${nome}!<br> Aguarde nosso o contato!</p>`;
 }
 function scroll_home() {
-    var elmnt = document.getElementById("home");
-    elmnt.scrollIntoView();
+    var element = document.getElementById("home");
+    element.scrollIntoView();
   }
   function scroll_sobre() {
-    var elmnt = document.getElementById("sobre");
-    elmnt.scrollIntoView();
+    var element = document.getElementById("sobre");
+    element.scrollIntoView();
   }
   function scroll_portfolio() {
-    var elmnt = document.getElementById("portfolio");
-    elmnt.scrollIntoView();
+    var element = document.getElementById("portfolio");
+    element.scrollIntoView();
   }
-  function scroll_contato() {
-    var elmnt = document.getElementById("contato");
-    elmnt.scrollIntoView();
+  function scroll_cadastro() {
+    var element = document.getElementById("cadastro");
+    element.scrollIntoView();
   }

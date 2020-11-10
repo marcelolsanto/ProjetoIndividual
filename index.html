@@ -4,15 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="icon" type="image/png" sizes="32x32" href="//android-chrome-512x512.png">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/2e7df3a744.js" crossorigin="anonymous"></script>
     <title>Marcelo Santos</title>
 </head>
 <body>
     <div class="container">
-        <div class="section_head">
-            <div class="suspiro_header"></div>
+        <header class="section_head">
             <div class="head_imag" onclick="scroll_sobre()">
                 <img src="marcelo.jpg" >
             </div>
@@ -30,14 +28,15 @@
                         <a href="portfolio" class="menu-link">
                         </a>Portfólio
                     </li>
-                    <li class="menu_item" onclick="scroll_contato()">
-                            <a href="contato"class="menu-link">
-                            </a>Contato
+                    <li class="menu_item" onclick="scroll_cadastro()">
+                            <a href="cadastro"class="menu-link">
+                            </a>Cadastro
                     </li>
                 </ul>
             </nav>
-        </div>
-        <div class="section_home" id="home">
+        </header>
+        <div class="suspiro_header"></div>
+        <section class="section_home" id="home">
             <div class="home_imag">
                 <img src="home.jpg">
             </div>
@@ -45,15 +44,16 @@
                 <div class="card">
                     <h3>Portfólios de Projetos</h3>
                     <p>Nesta página iremos visualizar algunsprojetos de móveis planejados que eudesenvolvia quando trabalhava como design deinteriores e projetista de móveis!</p>
-                    <input class="mail" placeholder="Digite seue-mail!" id="in_email">
-                    <button onclick="enviar()" id="btn1"class="btn_home">Enviar!
-                    </button>
-                </div>
+                    <div>
+                        <input class="mail" placeholder="Digite seu e-mail!" id="in_email">
+                        <button onclick="enviar()" id="btn1"class="btn_home">Enviar!
+                        </button>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
         <div class="suspiro"></div>
-        <div class="section_sobre" id="sobre">
+        <section class="section_sobre" id="sobre">
             <div class="sobre_imag">
                 <img src="sacada.jpg">
             </div>
@@ -65,13 +65,13 @@
                     </button>
                 </div>
             </div>
-        </div>
+        </section>
         <div class="suspiro"></div>
-        <div class="section_portfolio" id="portfolio">
+        <section class="section_portfolio" id="portfolio">
             <div class="box">
                 <div class="box-projetos">
                     <img src="cozinha.jpg">
-                    <h3>Cozinha</h3>
+                    <h3>Cozinhas</h3>
                     <p>Lorem ipsum dolor sit amet,consecteturadipisicing elit.</p>
                 </div>
                 <div class="box-projetos">
@@ -85,24 +85,24 @@
                     <p>Lorem ipsum dolor sit amet,consecteturadipisicing elit.</p>
                 </div>
             </div>
-        </div>
+        </section>
         <div class="suspiro"></div>
-        <div class="section_contato" id="contato">
-            <div class="contato_imag">
+        <section class="section_cadastro" id="cadastro">
+            <div class="cadastro_imag">
                 <img src="escritório.jpg">
             </div>
-            <div class="banner_contato">
-                <h3 id="mensagem" >Entre em contato!</h3>
-                <input class="mail" placeholder="Digite seuNome!" id="in_nome">
-                <input class="mail1" placeholder="Digite seucelular!" id="in_celular">
-                <input class="mail" placeholder="Digite seue-mail!" id="in_email2"><br>
+            <div class="banner_cadastro">
+                <h3 id="mensagem" >Faça seu cadastro!</h3>
+                <input class="mail" placeholder="Digite seu Nome!" id="in_nome">
+                <input class="mail1" placeholder="Digite seu celular!" id="in_celular">
+                <input class="mail" placeholder="Digite seu e-mail!" id="in_email2">
                 <button onclick="enviar()"id="btn2"class="btn_home">Enviar!
                 </button>
             </div>
-        </div>
-        <div class="footer">
+        </section>
+        <footer class="footer">
             <p>Feito por Marcelo Santos, aluno Bandtec 2020</p>
-        </div>
+        </footer>
     </div>
 </body>
 <script src="index.js"></script>
