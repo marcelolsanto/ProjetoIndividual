@@ -1,5 +1,5 @@
 
-var tentativas = 3;
+
 
 function enviar() {
     var email = in_email.value;
@@ -24,6 +24,7 @@ function enviar() {
         scroll_sobre();
     }
 }
+
 function calcular() {
     var ambientes = descricao_ambientes.value;
     var qtAmbientes = Number(in_qtAmbientes.value);
@@ -66,6 +67,7 @@ function calcular() {
 }
 
 function parcelar() {
+    var tentativas = 3;
     p1_parcelas.innerHTML = '';
     p2_parcelas.innerHTML = '';
     const juros = (100+1.3)/100;
@@ -142,53 +144,36 @@ function scroll_orcamento() {
     element.scrollIntoView();
 }
 
-
-
-var t = 2;
-const usuario = 'Marcelo Santos'
-const loginAdmin = 'marcelo.lsantos@bandtec.com.br';
-const senhaAdmin = 'Mr321456.';
-
 function logar(){
-    var login = in_emailLogin.value;
-    var senha = in_senhaLogin.value;
-    var acesso = (loginAdmin===login && senhaAdmin === senha);
+    var t = 2;
+    const Admin = "Marcelo Santos";
+    const email = "marcelo.lsantos@bandtec.com";
+    const key = "Mr321456.";
+    const root = (Admin == "Marcelo Santos" && email == "marcelo.lsantos@bandtec.com"&&key == "Mr321456.");
 
-    if (acesso == true && t <= 0) {
-        limpar_login();
-        mensagem.innerHTML = `<p>Olá, ${usuario}!<br>`;
+    var login = in_email2.value;
+    var senha = in_senha.value;
+    var acesso = (login == in_email2.value && senha == in_senha.value);
+
+    if (root||acesso && t >= 0) {
         alert('Você entrou com sucesso!');
-        in_emailLogin.style.display = 'none';
-        in_senhaLogin.style.display = 'none';
-        div_botao.style.display = 'none';
         t = 0;
 
-    } else if (acesso == false && t > 1) {
-        limpar_login();
-        p_mensagem.innerHTML = `<p>Falha de autenticação!<br>Você tem mais ${t} tentativas!</b>`;
+    } else if (acesso == "" && t > 1) {
+        p3_mensagem.innerHTML = `<p>Falha de autenticação!<br>Você tem mais ${t} tentativas!</b>`;
         t--;
 
-    } else if (acesso == false && t > 0) {
-        limpar_login();
-        p_mensagem.innerHTML = `<p>Falha de autenticação!<br>Você tem mais ${t} tentativas!</b>`;
+    } else if (acesso == "" && t > 0) {
+        p3_mensagem.innerHTML = `<p>Falha de autenticação!<br>Você tem mais ${t} tentativas!</b>`;
         t--;
 
     } else {
-        limpar_login();
-        p_mensageminnerHTML = `<p>Falha de autenticação!<br>Procure o Administrador ou recarregue a página!</b>`;
-        in_emailLogin.style.display = 'none';
-        in_senhaLogin.style.display = 'none';
-        div_botao.style.display = 'none';
-        h_mensagem.style.display = 'none';
+        p3_mensagem.innerHTML = `<p>Falha de autenticação!<br>Procure o Administrador ou recarregue a página!</b>`;
         t--;
     }
-    function limpar_login() {
-        in_emailLogin.value = '';
-        in_senhaLogin.value = '';
-    }
-
 }
-function cadastro() {
+
+function cadastrar() {
     var cpf = in_cpf.value;
     var usuario = in_nome.value;
     var celular = in_celular.value;
@@ -197,9 +182,8 @@ function cadastro() {
     var senha_ok = in_confirma.value;
     var validacao_senha = (senha != '' &&  senha_ok  != '');
     var validacao_dados = (cpf != '' && usuario != '' && celular != '' &email != '');
+    
     if (validacao_senha && validacao_dados) {
-        alert(`Usuário cadastrado com sucesso!`);
-        limpar_cadastro();
         in_nome.style.display = 'none';
         in_celular.style.display = 'none';
         in_email2.style.display = 'none';
@@ -210,16 +194,10 @@ function cadastro() {
         btn_login.style.display = 'block';
         mensagem1.innerHTML = `<p>Olá ${usuario}!<br>
         Click em ascessar e confira nossa página!</p>`;
+        alert(`Usuário cadastrado com sucesso!`);
+        logar();
     } else {
         alert(`Atenção!`);
         alert(`Preencha os dados corretamente!`);
-    }
-    function limpar_cadastro() {
-        in_cpf.value = '';
-        in_nome.value = '';
-        in_celular.value = '';
-        in_email2.value = '';
-        in_senha.value = '';
-        in_confirma.value = '';
     }
 }
