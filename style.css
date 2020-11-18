@@ -457,7 +457,7 @@ p{
 .banner_orcamento {
     position: relative;
     width: 100%;
-    bottom: 20rem;
+    bottom: 19rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -466,6 +466,7 @@ p{
 .banner_parcelas {
     position: relative;
     width: 100%;
+    bottom: 19rem;
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
@@ -576,6 +577,7 @@ label{
 }
 .btn_cadastro .btn_home{
     margin: 0;
+    
 }
 .footer{
     background: linear-gradient(to bottom, rgb(168, 84, 84), rgb(110, 30, 30));
@@ -673,6 +675,5 @@ a:-webkit-any-link {
     width: 330px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-content: center;
 }
