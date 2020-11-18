@@ -13,7 +13,7 @@ html{
     flex-direction: column;
 }
 .head {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.03));
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.05));
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -496,9 +496,9 @@ label{
 .card1 {
     position: relative;
     width: 550px;
-    height: 24rem;
+    height: 23rem;
     left: -5rem;
-    bottom: 5rem;
+    bottom: 4rem;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -509,9 +509,9 @@ label{
 .card2 {
     position: relative;
     width: 550px;
-    height: 24rem;
+    height: 23rem;
     right: -5rem;
-    bottom: 5rem;
+    bottom: 4rem;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;

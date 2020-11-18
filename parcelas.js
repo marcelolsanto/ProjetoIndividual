@@ -16,7 +16,6 @@ function parcelar() {
         in_qtAmbientes.style.display = 'block';
         label_desc_ambientes.style.display = 'block';
         label_qt_ambientes.style.display = 'block';
-        btn_calcular.style.display = 'block';
         in_parcelas.style.display = 'none';
         label_qt_parcelas.style.display = 'none';
         btn_parcelar.style.display = 'none';
@@ -32,7 +31,7 @@ function parcelar() {
         total_parcelas *= juros;
     } else {
         for (prestacao = 1; prestacao <= 3 && prestacao <= nParcelas; prestacao++) {
-            p1_parcelas.innerHTML += `Parcela ${prestacao}: R$ ${total_parcelas.toFixed(2)}<br>`;
+            p1_parcelas.innerHTML += `Parcelas ${prestacao}: R$ ${total_parcelas.toFixed(2)}<br>`;
             limpar_parcela();
             total_parcelas *= juros;
         }
