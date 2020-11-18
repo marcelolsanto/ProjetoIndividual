@@ -1,8 +1,0 @@
-{
-    "appService.defaultWebAppToDeploy": "/subscriptions/add62533-41bc-4f09-8dfd-f848cf2d6024/resourceGroups/ProjetoIndividual-BandTec/providers/Microsoft.Web/sites/PortifóliodeProjetos",
-    "appService.deploySubpath": "Deploy",
-    "appService.zipIgnorePattern": [
-        "node_modules{,/**}",
-        ".vscode{,/**}"
-    ]
-}

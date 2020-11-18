@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/media/marcelo/HD-MARCELO/ProjetoIndividual/css/style.css">
     <title>Login Marcelo Santos</title>
 </head>
 <body>
@@ -14,18 +14,18 @@
         <div class="suspiro"></div>
         <section class="section_login" id="login">
             <div class="login_imag">
-                <img src="/img/escritório.jpg">
+                <img src="/media/marcelo/HD-MARCELO/ProjetoIndividual/img/escritório.jpg">
             </div>
             <div class="banner_login">
-                <form action="" method="post" class="card">
+                <form action="/media/marcelo/HD-MARCELO/ProjetoIndividual/src/index.html" method="POST" class="card" name="form">
                     <h3 id="h3_mensagem">Faça seu Login!</h3>
                     <p id="p3_mensagem" ></p>
-                        <input class="mail" placeholder="Digite seu e-mail!" id="in_emailLogin">
-                        <input class="mail" placeholder="Digite sua senha!" id="in_senhaLogin" type="password">
+                        <input class="mail" placeholder="Digite seu e-mail!" id="in_emailLogin" type="email" name="email">
+                        <input class="mail" placeholder="Digite sua senha!" id="in_senhaLogin" type="password" name="senha">
                     <div class="btn_login" id="div_botao">
-                        <button  onclick="logar()"id="btn_login"class="btn_home"><a class="btn_link" href="index.html">Acessar!</a>
+                        <button  onclick="logar()"id="btn_login"class="btn_home" type="submit">Acessar!
                         </button>
-                        <button onclick="cadastrar()"id="btn_cadastro"class="btn_home"><a class="btn_link" href="cadastro.html">Cadastre-se!</a>
+                        <button id="btn_cadastro"class="btn_home"><a class="btn_link" href="/media/marcelo/HD-MARCELO/ProjetoIndividual/src/cadastro.html">Cadastre-se!</a>
                         </button>
                     </div>
                 </form>
@@ -36,5 +36,5 @@
             </footer>
         </div>
     </body>
-    <script src="/javaScript/index.js"></script>
+    <script src="/media/marcelo/HD-MARCELO/ProjetoIndividual/javaScript/login.js"></script>
     </html>
