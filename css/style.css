@@ -671,9 +671,3 @@ label{
 a:-webkit-any-link {
     color: white;
 }
-.btn_cadastro {
-    width: 330px;
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-}
