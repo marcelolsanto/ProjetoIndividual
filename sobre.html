@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcelo Santos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="javaScript/funcoes.js"></script>
+</head>
+<script>
+        let usuario;
+
+        verificar_autenticacao();
+
+</script>
+<body onload="verificar_autenticacao()">
+    <div class="container">
+        <header class="head">
+            <div class="head_imag" onclick="scroll_sobre()">
+                <img src="img/marcelo.jpg">
+            </div>
+            <nav class="head_menu">
+                <ul class="menu">
+                    <li class="menu_item">
+                        <a href="index.html"class="menu-link">
+                        Home</a>
+                    </li>
+                    <li class="menu_item">
+                            <a href="sobre.html"class="menu-link"></a>Sobre
+                        </li>
+                        <li class="menu_item">
+                                <a href="projetos.html"class="menu-link">Projetos</a>
+                            </li>
+                        <li class="menu_item">
+                            <a  href="orcamento.html"class="menu-link">
+                            Orçamento</a>
+                        </li>
+                    <li class="menu_item">
+                            <a href=""onclick="logoff()"class="menu-link">Logout</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="suspiro_header"></div>
+        <section class="sobre" id="sobre">
+            <div class="sobre_imag">
+                <img src="img/sacada.jpg">
+            </div>
+            <div class="banner_sobre">
+                <div class="card">
+                    <h3>Portfólios de Projetos</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore sequi iure molestiae repellat? In harum ullam, temporibus sapiente quod enim sequi ad delectus dolor atque optio eligendi voluptates facilis quibusdam!</p>
+                    <button onclick="scroll_portfolio()" id="btn2"class="btn_home">Saiba Mais!
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>Desenvolvido por Marcelo Santos, aluno BandTec&COPY; 2020</p>
+        </footer>
+    </div>
+</body>
+<script src="javaScript/index.js"></script>
+</html>
