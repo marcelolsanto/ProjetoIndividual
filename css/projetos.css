@@ -136,13 +136,13 @@ p{
     box-shadow: 2.5px 2.5px 10px  rgb(255, 166, 165);
     transition-duration: .9s;
 }
-#portfolio{
+#projetos{
     width: 100%;
-    height: 90vh;
+    height: 99vh;
     overflow: hidden;
     background: linear-gradient(to top, rgb(168, 84, 84), rgb(110, 30, 30));
 }
-.box{
+.row_projeto{
     width: 100%;
     position: relative;
     top: 11.5rem;
@@ -151,7 +151,25 @@ p{
     align-content: center;
     justify-content: space-between;
 }
-.box-projetos{
+.sala{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.cozinha{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.dormitorio{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.columm_one{
     width: 28%;
     height: 58vh;
     overflow: hidden;
@@ -162,11 +180,12 @@ p{
     box-shadow: 2.5px 2.5px 10px  rgb(0, 0, 0);
     cursor: pointer;
 }
-.box-projetos:hover{
+.columm_one:hover{
     box-shadow: 2.5px 2.5px 10px  rgb(255, 166, 165);
     transition-duration: .9s;
 }
-.box-familia{
+
+.columm_tow{
     width: 28%;
     height: 58vh;
     overflow: hidden;
@@ -175,11 +194,12 @@ p{
     box-shadow: 2.5px 2.5px 10px  rgb(0, 0, 0);
     cursor: pointer;
 }
-.box-familia:hover{
+.columm_tow:hover{
     box-shadow: 2.5px 2.5px 10px  rgb(255, 166, 165);
     transition-duration: .9s;
 }
-.box-musica{
+
+.columm_tree{
     width: 28%;
     height: 58vh;
     position: relative;
@@ -190,11 +210,12 @@ p{
     box-shadow: 2.5px 2.5px 10px  rgb(0, 0, 0);
     cursor: pointer;
 }
-.box-musica:hover{
+.columm_tree:hover{
     box-shadow: 2.5px 2.5px 10px  rgb(255, 166, 165);
     transition-duration: .9s;
 }
-.box-projetos .cards img{
+
+.sala img{
     object-fit: cover;
     opacity: 0.95;
     width: 100%;
@@ -202,12 +223,12 @@ p{
     display: flex;
     flex-direction: row;
     transition: ease-in-out;
-    animation-name: projetos;
+    animation-name: sala;
     animation-duration: 180s;
-    animation-delay: 2s;
+    animation-delay: 7s;
     animation-iteration-count: infinite;
 }
-@keyframes projetos{
+@keyframes sala{
     0%{transform: translateX(0%);}
     5% {transform: translateX(-100%);}
     10%{transform: translateX(-200%);}
@@ -230,7 +251,7 @@ p{
     95%{transform: translateX(-1900%);}
     100%{transform: translateX(-2000%);}
 }
-.box-familia .cards img{
+.cozinha img{
     object-fit: cover;
     opacity: 0.95;
     width: 100%;
@@ -238,12 +259,12 @@ p{
     display: flex;
     flex-direction: row;
     transition: ease-in-out;
-    animation-name: familia;
+    animation-name: cozinha;
     animation-duration: 180s;
-    animation-delay: 12s;
+    animation-delay: 17s;
     animation-iteration-count: infinite;
 }
-@keyframes familia {
+@keyframes cozinha {
     0%{transform: translateX(0%);}
     5% {transform: translateX(-100%);}
     10%{transform: translateX(-200%);}
@@ -266,7 +287,7 @@ p{
     95%{transform: translateX(-1900%);}
     100%{transform: translateX(-2000%);}
 }
-.box-musica .cards img{
+.dormitorio img{
     object-fit: cover;
     opacity: 0.95;
     width: 100%;
@@ -274,12 +295,12 @@ p{
     display: flex;
     flex-direction: row;
     transition: ease-in-out;
-    animation-name: musica;
+    animation-name: dormitorio;
     animation-duration: 180s;
-    animation-delay: 22s;
+    animation-delay: 27s;
     animation-iteration-count: infinite;
 }
-@keyframes musica {
+@keyframes dormitorio {
     0%{transform: translateX(0%);}
     5% {transform: translateX(-100%);}
     10%{transform: translateX(-200%);}
@@ -308,33 +329,252 @@ p{
     display: flex;
     flex-direction: row;
 }
-.box-projetos h3{
+.columm_one h3{
     position: relative;
     bottom: 7.5rem;
 }
-.box-projetos p{
+.columm_one p{
     position: relative;
     bottom: 7rem;
     text-align: center;
 }
-.box-familia h3{
+.columm_tow h3{
     position: relative;
     bottom: 7.5rem;
 }
-.box-familia p{
+.columm_tow p{
     position: relative;
     bottom: 7rem;
     text-align: center;
 }
-.box-musica h3{
+.columm_tree h3{
     position: relative;
     bottom: 7.5rem;
 }
-.box-musica p{
+.columm_tree p{
     position: relative;
     bottom: 7rem;
     text-align: center;
 }
+
+#portfolio{
+    width: 100%;
+    height: 89vh;
+    overflow: hidden;
+    background: linear-gradient(to top, rgb(168, 84, 84), rgb(110, 30, 30));
+}
+.row_portifolio{
+    width: 100%;
+    position: relative;
+    top: 11rem;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+}
+.minha_familia{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.meus_parentes{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.meus_amigos{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.columm_one{
+    width: 28%;
+    height: 58vh;
+    overflow: hidden;
+    position: relative;
+    right: -5rem;
+    background-color: rgba(0, 0, 0, 0.99);
+    border-radius: 10px;
+    box-shadow: 2.5px 2.5px 10px  rgb(0, 0, 0);
+    cursor: pointer;
+}
+.columm_one:hover{
+    box-shadow: 2.5px 2.5px 10px  rgb(255, 166, 165);
+    transition-duration: .9s;
+}
+
+.columm_tow{
+    width: 28%;
+    height: 58vh;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.99);
+    border-radius: 10px;
+    box-shadow: 2.5px 2.5px 10px  rgb(0, 0, 0);
+    cursor: pointer;
+}
+.columm_tow:hover{
+    box-shadow: 2.5px 2.5px 10px  rgb(255, 166, 165);
+    transition-duration: .9s;
+}
+
+.columm_tree{
+    width: 28%;
+    height: 58vh;
+    position: relative;
+    left: -5rem;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.99);
+    border-radius: 10px;
+    box-shadow: 2.5px 2.5px 10px  rgb(0, 0, 0);
+    cursor: pointer;
+}
+.columm_tree:hover{
+    box-shadow: 2.5px 2.5px 10px  rgb(255, 166, 165);
+    transition-duration: .9s;
+}
+
+.minha_familia img{
+    object-fit: cover;
+    opacity: 0.95;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    transition: ease-in-out;
+    animation-name: familia;
+    animation-duration: 180s;
+    animation-delay: 47s;
+    animation-iteration-count: infinite;
+}
+@keyframes familia{
+    0%{transform: translateX(0%);}
+    5% {transform: translateX(-100%);}
+    10%{transform: translateX(-200%);}
+    15%{transform: translateX(-300%);}
+    20%{transform: translateX(-400%);}
+    25%{transform: translateX(-500%);}
+    30%{transform: translateX(-600%);}
+    35%{transform: translateX(-700%);}
+    40%{transform: translateX(-800%);}
+    45%{transform: translateX(-900%);}
+    50%{transform: translateX(-1000%);}
+    55%{transform: translateX(-1100%);}
+    60%{transform: translateX(-1200%);}
+    65%{transform: translateX(-1300%);}
+    70%{transform: translateX(-1400%);}
+    75%{transform: translateX(-1500%);}
+    80%{transform: translateX(-1600%);}
+    85%{transform: translateX(-1700%);}
+    90%{transform: translateX(-1800%);}
+    95%{transform: translateX(-1900%);}
+    100%{transform: translateX(-2000%);}
+}
+.meus_parentes img{
+    object-fit: cover;
+    opacity: 0.95;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    transition: ease-in-out;
+    animation-name: parentes;
+    animation-duration: 180s;
+    animation-delay: 57s;
+    animation-iteration-count: infinite;
+}
+@keyframes parentes {
+    0%{transform: translateX(0%);}
+    5% {transform: translateX(-100%);}
+    10%{transform: translateX(-200%);}
+    15%{transform: translateX(-300%);}
+    20%{transform: translateX(-400%);}
+    25%{transform: translateX(-500%);}
+    30%{transform: translateX(-600%);}
+    35%{transform: translateX(-700%);}
+    40%{transform: translateX(-800%);}
+    45%{transform: translateX(-900%);}
+    50%{transform: translateX(-1000%);}
+    55%{transform: translateX(-1100%);}
+    60%{transform: translateX(-1200%);}
+    65%{transform: translateX(-1300%);}
+    70%{transform: translateX(-1400%);}
+    75%{transform: translateX(-1500%);}
+    80%{transform: translateX(-1600%);}
+    85%{transform: translateX(-1700%);}
+    90%{transform: translateX(-1800%);}
+    95%{transform: translateX(-1900%);}
+    100%{transform: translateX(-2000%);}
+}
+.meus_amigos img{
+    object-fit: cover;
+    opacity: 0.95;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    transition: ease-in-out;
+    animation-name: amigos;
+    animation-duration: 180s;
+    animation-delay: 67s;
+    animation-iteration-count: infinite;
+}
+@keyframes amigos {
+    0%{transform: translateX(0%);}
+    5% {transform: translateX(-100%);}
+    10%{transform: translateX(-200%);}
+    15%{transform: translateX(-300%);}
+    20%{transform: translateX(-400%);}
+    25%{transform: translateX(-500%);}
+    30%{transform: translateX(-600%);}
+    35%{transform: translateX(-700%);}
+    40%{transform: translateX(-800%);}
+    45%{transform: translateX(-900%);}
+    50%{transform: translateX(-1000%);}
+    55%{transform: translateX(-1100%);}
+    60%{transform: translateX(-1200%);}
+    65%{transform: translateX(-1300%);}
+    70%{transform: translateX(-1400%);}
+    75%{transform: translateX(-1500%);}
+    80%{transform: translateX(-1600%);}
+    85%{transform: translateX(-1700%);}
+    90%{transform: translateX(-1800%);}
+    95%{transform: translateX(-1900%);}
+    100%{transform: translateX(-2000%);}
+}
+
+.columm_one h3{
+    position: relative;
+    bottom: 7.5rem;
+}
+.columm_one p{
+    position: relative;
+    bottom: 7rem;
+    text-align: center;
+}
+.columm_tow h3{
+    position: relative;
+    bottom: 7.5rem;
+}
+.columm_tow p{
+    position: relative;
+    bottom: 7rem;
+    text-align: center;
+}
+.columm_tree h3{
+    position: relative;
+    bottom: 7.5rem;
+}
+.columm_tree p{
+    position: relative;
+    bottom: 7rem;
+    text-align: center;
+}
+
+
+
 .footer{
     background: linear-gradient(to bottom, rgb(168, 84, 84), rgb(110, 30, 30));
     width: 100%;
@@ -348,7 +588,21 @@ p{
     left:5rem;
     font-size: 1rem;
 }
-
+.suspiro {
+    background: linear-gradient(to bottom, rgb(168, 84, 84), rgb(110, 30, 30));
+    height: 1vh;
+    width: 100%;
+}
+.suspiro .p{
+    font-size: 1rem;
+}
+.suspiro_header {
+    background-color: black;
+    height: 1vh;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+}
 a:-webkit-any-link {
     color: white;
 }

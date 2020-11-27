@@ -44,12 +44,38 @@
                 <div class="card">
                     <h3 id="mensagem">Projetos de Design Interiores</h3>
                     <p id="p">"Design e decoração dão ao mundo algo que ele não sabia que sentia falta!"<br>Steve Jobs</p>
-                    <form id="form_cadastro" method="post" onsubmit="return contato()">
+                    <form >
                         <input class="mail"
-                        autofocus="autofocus" placeholder="Digite seu e-mail!" id="in_email" required minlength="4" type="email" name="login">
-                        <button    id="btn_cadastro"class="btn_home" type="submit">Receba Notícias!
-                        </button>
+                        autofocus="autofocus" placeholder="Digite seu e-mail!" id="in_email" type="email" name="login">
+                        <input    id="btn1"class="btn_home" value="Receba Notícias!" onclick="enviar()">
+                        </input>
                     </form>
+                </div>
+            </div>
+        </section>
+        <div class="suspiro"></div>
+        <section class="projetos" id="projetos">
+            <div class="row_projeto">
+                <div class="columm_one">
+                    <div class="sala" onclick="scroll_cadastro()">
+                        <img src="img/missao.png">
+                    </div>
+                    <h3>Missão</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                </div>
+                <div class="columm_tow">
+                    <div class="cozinha">
+                        <img src="img/visao.png">
+                    </div>
+                    <h3>Visão</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                </div>
+                <div class="columm_tree">
+                    <div class="dormitorio">
+                        <img src="img/valores.png">
+                     </div>
+                    <h3>Valores</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
                 </div>
             </div>
         </section>

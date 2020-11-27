@@ -39,7 +39,7 @@ function validar_sessao() {
             console.error('Sessão :.( ');
             logoff();
         } 
-    });
+    });    
 }
 
 function finalizar_sessao() {

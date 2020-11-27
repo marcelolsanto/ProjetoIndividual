@@ -24,43 +24,7 @@ function enviar() {
         in_email.style.display = 'none';
         btn1.style.display = 'none';
         p.style.display = 'none';
-        scroll_sobre();
+        window.location.href='sobre.html';
+     }
+
     }
-}
-
-function contato() {
-    aguardar();
-    var formulario = new URLSearchParams(new FormData(form_cadastro));
-    fetch("/newsletter/cadastrar", {
-        method: "POST",
-        body: formulario
-    }).then(function (response) {
-        
-        if (response.ok) {
-
-            scroll_sobre();
-
-        } else {
-
-            console.log('Erro de cadastro!');
-            response.text().then(function (resposta) {
-                div_erro.innerHTML = resposta;
-            });
-            finalizar_aguardar();
-        }
-    });
-
-    return false;
-}
-
-function aguardar() {
-    btn_cadastro.disabled = true;
-    //img_aguarde.style.display='block';
-    p4_mensagem.style.display='none';
-}
-
-function finalizar_aguardar(resposta) {
-    btn_cadastro.disabled = false;
-    //img_aguarde.style.display='none';
-    p4_mensagem.style.display='block';
-}
