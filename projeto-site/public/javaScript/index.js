@@ -52,3 +52,19 @@ function ocultar_compromisso() {
     btn_compromisso2.style.display = 'none';
     btn_compromisso1.style.display = 'block';
 }
+
+function mostrar_ocultar() {
+    if (condition) {
+        h3_missao.style.display = 'flex';
+        p_missao.style.display = 'flex';
+    } else {
+        h3_missao.style.display = 'none';
+        p_missao.style.display = 'none';
+    }
+}
+function ocultar_missao() {
+    h3_organizacao.style.display = 'none';
+    p_organizacao.style.display = 'none';
+    btn_organizacao2.style.display = 'none';
+    btn_organizacao1.style.display = 'block';
+}
