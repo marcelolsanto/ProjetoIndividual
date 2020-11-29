@@ -45,24 +45,6 @@ function ocultar_compromisso() {
     btn_compromisso2.style.display = 'none';
     btn_compromisso1.style.display = 'block';
 }
-
-<<<<<<< HEAD
-function mostrar_ocultar() {
-    if (condition) {
-        h3_missao.style.display = 'flex';
-        p_missao.style.display = 'flex';
-    } else {
-        h3_missao.style.display = 'none';
-        p_missao.style.display = 'none';
-    }
-}
-function ocultar_missao() {
-    h3_organizacao.style.display = 'none';
-    p_organizacao.style.display = 'none';
-    btn_organizacao2.style.display = 'none';
-    btn_organizacao1.style.display = 'block';
-}
-=======
 var clicks = {missao:0,visao:0,valor:0}
     function mostrar_ocultar_missao() {
         if (clicks.missao %2 == 0) {
@@ -117,4 +99,3 @@ var clicks = {missao:0,visao:0,valor:0}
             p_valor.style.display = 'none';
         }
     }
->>>>>>> 479b6a126b90ffa168ae50f2b83d176558a6dacc
