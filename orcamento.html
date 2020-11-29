@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orçamento | Marcelo Santos</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+    <link rel="stylesheet" href="css/orcamento.css">
+    <script src="https://kit.fontawesome.com/729e0ee7d1.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="javaScript/funcoes.js"></script>
+</head>
+<script>
+        let usuario;
+        verificar_autenticacao();
+</script>
+<body onload="verificar_autenticacao()">
+    <div class="container">
+        <header class="head">
+            <div class="head_imag" onclick="scroll_sobre()">
+                <img src="img/marcelo.jpg">
+            </div>
+            <nav class="head_menu">
+                <ul class="menu">
+                    <li class="menu_item">
+                        <a href="index.html"class="menu-link">
+                        Home</a>
+                    </li>
+                    <li class="menu_item" >
+                            <a href="sobre.html"class="menu-link">Sobre</a>
+                        </li>
+                        <li class="menu_item" >
+                                <a href="projetos.html"class="menu-link">Projetos</a>
+                            </li>
+                        <li class="menu_item">
+                            <a  href="orcamento.html"class="menu-link">
+                            </a>Orçamento
+                        </li>
+                        <li class="menu_item" >
+                                <a href=""onclick="logoff()"class="menu-link">Logout</a>
+                        </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="suspiro_header"></div>
+        <div class="suspiro"></div>
+        <section class="orcamento" id="orcamento">
+            <div class="orcamento_imag">
+                <img src="img/quarto de bebe.jpg">
+            </div>
+            <div class="banner_orcamento">
+                <div class="card1">
+                    <h3  id="mensagem_orçamento">Orçamento de Projetos!</h3>
+                    <label id="label_desc_ambientes" for="qt_ambientes">Quais os Ambientes?</label>
+                    <select class="mail1" 
+                    id="descricao_ambientes">
+                        <option  value="">Escolha uma opção!</option>
+                        <option value="Apartamento">Apartamento!</option>
+                        <option value="Cozinha">Cozinha!</option>
+                        <option value="Dormitorio">Dormitório!</option>
+                        <option value="Sala">Sala!</option>
+                        <option value="Escritorio">Escritório!</option>
+                        <option value="Sacada">Sacada!</option>
+                    </select>
+                    <label id="label_qt_ambientes" for="qt_ambientes">Quantos Ambientes?</label>
+                    <input class="mail1" type="number" placeholder="Ex.: 10, ou 5 ambientes." name="quantidade_ambientes" id="in_qtAmbientes">
+
+                    <label style="display: none" id="label_qt_parcelas" for="in_parcelas">Quantas parcelas?</label>
+                    <input style="display: none" class="mail1" type="number" placeholder="Ex.: 14 ou 10 parcelas." name="quantidade_parcelas" id="in_parcelas">
+                    <div>
+                        <button onclick="calcular()" id="btn_calcular"class="btn_home">Calcular!
+                        </button>
+                        <button style="display: none" onclick="parcelar()" id="btn_parcelar"class="btn_home">Simular!
+                        </button>
+                        <button style="display: none" onclick="scroll_portfolio()" id="btn_cadastrar" class="btn_home">Saiba Mais!
+                        </button>
+                    </div>
+                </div>
+                <div class="card2" id="card2" style="display: none">
+                    <p class="banner_parcelas" id="p1_parcelas"></p>
+                    <p class="banner_parcelas" id="p2_parcelas"></p>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+                <p>Desenvolvido por Marcelo Santos, aluno BandTec&COPY; 2020</p>
+                <p id="b_usuario"></p>
+            <nav class="nav">
+                <ul class="list">
+                    <li class="menu_footer">
+                        <a href="https://www.linkedin.com/in/marcelo-santos-00093984/"class="menu-link">
+                            <i class="fab fa-linkedin fa-2x"></i></a>
+                    </li>
+                    <li class="menu_footer">
+                        <a href="https://github.com/marcelolsanto"class="menu-link"><i class="fab fa-github-square fa-2x"></i></a>
+                    </li>
+                    <li class="menu_footer">
+                        <a href="https://www.instagram.com/marcelolsantos30/"class="menu-link"><i class="fab fa-instagram-square fa-2x"></i></a>
+                    </li>
+                </nav>
+            </footer>
+    </div>
+</body>
+<script src="javaScript/index.js"></script>
+<script src="javaScript/calcular.js"></script>
+<script src="javaScript/parcelas.js"></script>
+</html>
