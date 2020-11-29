@@ -226,8 +226,8 @@ p{
     transition: ease-in-out;
     animation-name: sala;
     animation-duration: 300s;
-    animation-delay: 10s;
-    animation-iteration-count: infinite;
+    animation-delay: 5s;
+    animation-iteration-count: 7;
 }
 @keyframes sala{
     0%{transform: translateX(0%);}
@@ -262,8 +262,8 @@ p{
     transition: ease-in-out;
     animation-name: cozinha;
     animation-duration: 300s;
-    animation-delay: 20s;
-    animation-iteration-count: infinite;
+    animation-delay: 15s;
+    animation-iteration-count: 6;
 }
 @keyframes cozinha {
     0%{transform: translateX(0%);}
@@ -298,8 +298,8 @@ p{
     transition: ease-in-out;
     animation-name: dormitorio;
     animation-duration: 300s;
-    animation-delay: 30s;
-    animation-iteration-count: infinite;
+    animation-delay: 25s;
+    animation-iteration-count: 5;
 }
 @keyframes dormitorio {
     0%{transform: translateX(0%);}
@@ -448,8 +448,8 @@ p{
     transition: ease-in-out;
     animation-name: familia;
     animation-duration: 300s;
-    animation-delay: 50s;
-    animation-iteration-count: infinite;
+    animation-delay: 35s;
+    animation-iteration-count: 4;
 }
 @keyframes familia{
     0%{transform: translateX(0%);}
@@ -484,8 +484,8 @@ p{
     transition: ease-in-out;
     animation-name: parentes;
     animation-duration: 300s;
-    animation-delay: 60s;
-    animation-iteration-count: infinite;
+    animation-delay: 45s;
+    animation-iteration-count: 3;
 }
 @keyframes parentes {
     0%{transform: translateX(0%);}
@@ -520,8 +520,8 @@ p{
     transition: ease-in-out;
     animation-name: amigos;
     animation-duration: 300s;
-    animation-delay: 70s;
-    animation-iteration-count: infinite;
+    animation-delay: 55s;
+    animation-iteration-count: 2;
 }
 @keyframes amigos {
     0%{transform: translateX(0%);}
@@ -646,7 +646,7 @@ a:-webkit-any-link {
     animation-name: indicativo;
     animation-duration:1s;
     animation-delay: 2s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 5;
 }
 @keyframes indicativo {
     0%,100% {transform: translateY(0rem);}

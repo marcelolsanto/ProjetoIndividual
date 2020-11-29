@@ -372,7 +372,7 @@ a:-webkit-any-link {
     animation-name: indicativo;
     animation-duration:1s;
     animation-delay: 2s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 5;
 }
 @keyframes indicativo {
     0%,100% {transform: translateY(0rem);}
