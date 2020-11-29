@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro | Marcelo Santos</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+    <script src="https://kit.fontawesome.com/729e0ee7d1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/cadastro.css">
+</head>
+<body>
+    <div class="container">
+        <header class="head">
+                <div class="head_imag" onclick="scroll_sobre()">
+                    <img src="img/marcelo.jpg">
+                </div>
+                <nav class="head_menu">
+                    <ul class="menu">
+                        <li class="menu_item">
+                            <a href="index.html"class="menu-link">Home</a>
+                        </li>
+                        <li class="menu_item" >
+                            <a href="sobre.html" class="menu-link">Sobre</a>
+                        </li>
+                        <li class="menu_item" >
+                            <a href="projetos.html"class="menu-link">Projetos</a>
+                        </li>
+                        <li class="menu_item">
+                            <a  href="orcamento.html"class="menu-link">Orçamento</a>
+                        </li>
+                        <li class="menu_item" >
+                            <a href="login.html" class="menu-link">Login</a>
+                        </li>
+                    </ul>
+                </nav>
+        </header>
+    <div class="suspiro_header"></div>
+        <section class="cadastro" id="cadastro">
+                <div class="cadastro_imag">
+                    <img src="img/escritório.jpg">
+                </div>
+                <div class="banner_cadastro">
+                    <form id="form_cadastro" method="post" class="card" onsubmit="return cadastrar()">
+                        <h3 id="mensagem1" >Cadastre-se!</h3>
+                        <p id="p4_mensagem" style=" display: none;">
+                            Erro ao cadastrar</p>
+                        
+
+                                <input type="text"  class="mail"
+                                autofocus="autofocus" placeholder="Nome completo" 
+                                required minlength="4" name="nome">
+
+                                <input class="mail" placeholder="Digite seu e-mail!"required minlength="4" type="email" name="login">
+
+                                <input class="mail" placeholder="**********" required minlength="4"type="password"name="senha">
+
+                        <div class="btn_cadastro">
+                            
+                            <button  id="btn_login" class="btn_home" type="submit"><a href="login.html" class="btn-link">
+                                Login!</a></button>
+
+                            <input type="submit"id="btn_cadastro"value="Cadastrar"class="btn_home" >
+                        </div>
+                    </form>
+                </div>
+        </section>
+        <footer class="footer">
+                <p>Desenvolvido por Marcelo Santos, aluno BandTec&COPY; 2020</p>
+                <p id="b_usuario"></p>
+            <nav class="nav">
+                <ul class="list">
+                    <li class="menu_footer">
+                        <a href="https://www.linkedin.com/in/marcelo-santos-00093984/"class="menu-link">
+                    <i class="fab fa-linkedin fa-2x"></i></a>
+                    </li>
+                    <li class="menu_footer">
+                        <a href="https://github.com/marcelolsanto"class="menu-link"><i class="fab fa-github-square fa-2x"></i></a>
+                    </li>
+                    <li class="menu_footer">
+                        <a href="https://www.instagram.com/marcelolsantos30/"class="menu-link"><i class="fab fa-instagram-square fa-2x"></i></a>
+                    </li>
+                </div>ul>
+            </nav>
+        </footer>
+</body>
+</html>
+<script src="javaScript/cadastro.js"></script>

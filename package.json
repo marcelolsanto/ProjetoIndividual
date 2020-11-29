@@ -1,0 +1,9 @@
+{
+  "name": "pi-adsa-2019-2-ProjetoIndividual-MarceloSantos",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./projeto-site/bin/www",
+	"postinstall": "cd projeto-site && npm install"
+  }
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto individual | Marcelo Santos</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+    
+    <script src="https://kit.fontawesome.com/729e0ee7d1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="head">
+            <div class="head_imag" onclick="scroll_sobre()">
+                <img src="img/marcelo.jpg">
+            </div>
+            <nav class="head_menu">
+                <ul class="menu">
+                    <li class="menu_item" onclick="scroll_home()">
+                        <a href="#home"class="menu-link">
+                        Home</a>
+                    </li>
+                    <li class="menu_item" >
+                        <a href="sobre.html"class="menu-link">Sobre</a>
+                    </li>
+                    <li class="menu_item">
+                            <a href="projetos.html"class="menu-link">Projetos</a>
+                    </li>
+                    <li class="menu_item">
+                        <a  href="orcamento.html"class="menu-link">
+                        Orçamento</a>
+                    </li>
+                    <li class="menu_item" >
+                        <a href="cadastro.html" class="menu-link">
+                        Cadastro</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="suspiro_header"></div>
+        <section class="home" id="home">
+            <div class="home_imag">
+                <img src="img/home.jpg">
+            </div>
+            <div class="indicativo">
+                <a href="#valores"class="menu-link"><i class="fas fa-caret-square-down fa-2x"></i></a>
+            </div>
+            <div class="banner_home">
+                <div class="card">
+                    <h3 id="mensagem">Projetos de Design Interiores</h3>
+                    <p id="p">"Design e decoração dão ao mundo algo que ele não sabia que sentia falta!"<br>Steve Jobs</p>
+                    <div>
+                        <input class="mail"
+                        autofocus="autofocus" placeholder="Digite seu e-mail!" id="in_email" type="email" name="login">
+                        <button    id="btn1"class="btn_home" onclick="enviar()">Receba Notícias!
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="suspiro"></div>
+        <section class="projetos" id="valores">
+            <div class="row_valores">
+                <div class="columm_one">
+                    <div class="missao" onclick="scroll_cadastro()">
+                        <img src="img/missao.png">
+                    </div>
+                    <h3>Missão</h3>
+                    <p>"A liberdade é a possibilidade do isolamento".<br>Fernando Pessoa.</p>
+                </div>
+                <div class="columm_tow">
+                    <div class="cozinha">
+                        <img src="img/visao.png">
+                    </div>
+                    <h3>Visão</h3>
+                    <p>"O conhecimento passou a ser o principal fator de produção e geração de riquezas". </p>
+                </div>
+                <div class="columm_tree">
+                    <div class="dormitorio">
+                        <img src="img/valores.png">
+                     </div>
+                    <h3>Valor</h3>
+                    <p>"Só amamos aquilo que conhecemos"<br>St° Agostinho. </p>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <p>Desenvolvido por Marcelo Santos, aluno BandTec&COPY; 2020</p>
+            <p id="b_usuario"></p>
+        <nav class="nav">
+            <ul class="list">
+                <li class="menu_footer">
+                    <a href="https://www.linkedin.com/in/marcelo-santos-00093984/"class="menu-link">
+                        <i class="fab fa-linkedin fa-2x"></i></a>
+                </li>
+                <li class="menu_footer">
+                    <a href="https://github.com/marcelolsanto"class="menu-link"><i class="fab fa-github-square fa-2x"></i></a>
+                </li>
+                <li class="menu_footer">
+                    <a href="https://www.instagram.com/marcelolsantos30/"class="menu-link"><i class="fab fa-instagram-square fa-2x"></i></a>
+                </li>
+            </nav>
+        </footer>
+    </div>
+</body>
+<script src="javaScript/index.js"></script>
+<script src="javaScript/calcular.js"></script>
+<script src="javaScript/newsletter.js"></script>
+<script src="javaScript/parcelas.js"></script>
+<script src="javaScript/funcoes.js"></script>
+</html>
