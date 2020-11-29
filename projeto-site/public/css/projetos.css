@@ -225,7 +225,7 @@ p{
     flex-direction: row;
     transition: ease-in-out;
     animation-name: sala;
-    animation-duration: 180s;
+    animation-duration: 300s;
     animation-delay: 10s;
     animation-iteration-count: infinite;
 }
@@ -261,7 +261,7 @@ p{
     flex-direction: row;
     transition: ease-in-out;
     animation-name: cozinha;
-    animation-duration: 180s;
+    animation-duration: 300s;
     animation-delay: 20s;
     animation-iteration-count: infinite;
 }
@@ -297,7 +297,7 @@ p{
     flex-direction: row;
     transition: ease-in-out;
     animation-name: dormitorio;
-    animation-duration: 180s;
+    animation-duration: 300s;
     animation-delay: 30s;
     animation-iteration-count: infinite;
 }
@@ -390,6 +390,7 @@ p{
     height: 100%;
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 .columm_one{
     width: 28%;
@@ -446,7 +447,7 @@ p{
     flex-direction: row;
     transition: ease-in-out;
     animation-name: familia;
-    animation-duration: 180s;
+    animation-duration: 300s;
     animation-delay: 50s;
     animation-iteration-count: infinite;
 }
@@ -482,7 +483,7 @@ p{
     flex-direction: row;
     transition: ease-in-out;
     animation-name: parentes;
-    animation-duration: 180s;
+    animation-duration: 300s;
     animation-delay: 60s;
     animation-iteration-count: infinite;
 }
@@ -518,7 +519,7 @@ p{
     flex-direction: row;
     transition: ease-in-out;
     animation-name: amigos;
-    animation-duration: 180s;
+    animation-duration: 300s;
     animation-delay: 70s;
     animation-iteration-count: infinite;
 }
