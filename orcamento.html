@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto individual | Marcelo Santos</title>
+    <title>Orçamento | Marcelo Santos</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
     <link rel="stylesheet" href="css/orcamento.css">
+    <script src="https://kit.fontawesome.com/729e0ee7d1.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="javaScript/funcoes.js"></script>
 </head>
-<!--
-    
--->
 <script>
         let usuario;
         verificar_autenticacao();
@@ -76,15 +78,29 @@
                         </button>
                     </div>
                 </div>
-                <div class="card2" id="card2">
+                <div class="card2" id="card2" style="display: none">
                     <p class="banner_parcelas" id="p1_parcelas"></p>
                     <p class="banner_parcelas" id="p2_parcelas"></p>
                 </div>
             </div>
         </section>
         <footer class="footer">
-            <p>Desenvolvido por Marcelo Santos, aluno BandTec&COPY; 2020</p>
-        </footer>
+                <p>Desenvolvido por Marcelo Santos, aluno BandTec&COPY; 2020</p>
+                <p id="b_usuario"></p>
+            <nav class="nav">
+                <ul class="list">
+                    <li class="menu_footer">
+                        <a href="https://www.linkedin.com/in/marcelo-santos-00093984/"class="menu-link">
+                            <i class="fab fa-linkedin fa-2x"></i></a>
+                    </li>
+                    <li class="menu_footer">
+                        <a href="https://github.com/marcelolsanto"class="menu-link"><i class="fab fa-github-square fa-2x"></i></a>
+                    </li>
+                    <li class="menu_footer">
+                        <a href="https://www.instagram.com/marcelolsantos30/"class="menu-link"><i class="fab fa-instagram-square fa-2x"></i></a>
+                    </li>
+                </nav>
+            </footer>
     </div>
 </body>
 <script src="javaScript/index.js"></script>

@@ -19,18 +19,22 @@ function parcelar() {
         in_parcelas.style.display = 'none';
         label_qt_parcelas.style.display = 'none';
         btn_parcelar.style.display = 'none';
+        card2.style.display = 'none';
 
     } else if (nParcelas > 20 || nParcelas == "") {
-        alert('Preencha o campo ou reduza a quantidade de parcelas');
+        alert('Preencha o campo corretamente ou reduza a quantidade de parcelas');
+        card2.style.display = 'none';
         limpar_parcela();
     } else if (total_avista <= 300 && nParcelas <= 3){
         if (total_parcelas < 100){
             limpar_parcela();
+            card2.style.display = 'none';
         alert('Valor das prestações é de R$ '+total_parcelas.toFixed(2)+' menor que R$ 100,00!');
         alert('Diminua a quantidade de parcelas!');
         total_parcelas *= juros;
     } else {
         for (prestacao = 1; prestacao <= 3 && prestacao <= nParcelas; prestacao++) {
+            card2.style.display = 'flex';
             p1_parcelas.innerHTML += `Parcelas ${prestacao}: R$ ${total_parcelas.toFixed(2)}<br>`;
             limpar_parcela();
             total_parcelas *= juros;
@@ -41,13 +45,16 @@ function parcelar() {
             limpar_parcela();
             alert('Valor das prestações é de R$ '+total_parcelas.toFixed(2)+' menor que R$ 100,00!');
             alert('Diminua a quantidade de parcelas!');
+            card2.style.display = 'none';
         } else {
             for (prestacao = 1; prestacao <= 7 && prestacao <= nParcelas;prestacao++) {
+                card2.style.display = 'flex';
                 p1_parcelas.innerHTML += `Parcela ${prestacao}: R$ ${total_parcelas.toFixed(2)}<br>`;
                 limpar_parcela();
                 total_parcelas *= juros;
             }
             for (prestacao = 8; prestacao <= nParcelas; prestacao++) {
+                card2.style.display = 'flex';
                 p2_parcelas.innerHTML += `Parcela ${prestacao}: R$ ${total_parcelas.toFixed(2)}<br>`;
                 limpar_parcela();
                 total_parcelas *= juros;

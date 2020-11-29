@@ -3,17 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto individual | Marcelo Santos</title>
+    <title>Projetos  | Marcelo Santos</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
     <link rel="stylesheet" href="css/projetos.css">
+    <script src="https://kit.fontawesome.com/729e0ee7d1.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="javaScript/funcoes.js"></script>
 </head>
 <script>
         let usuario;
-
         verificar_autenticacao();
-
 </script>
-<body onload="verificar_autenticacao()">
+<body onload = "verificar_autenticacao()">
     <div class="container">
         <header class="head">
             <div class="head_imag">
@@ -25,11 +28,11 @@
                         <a href="index.html"class="menu-link">
                         Home</a>
                     </li>
-                    <li class="menu_item" >
+                    <li class="menu_item" onclick="scroll_projetos()">
                             <a href="sobre.html"class="menu-link">Sobre</a>
                         </li>
                         <li class="menu_item" >
-                                <a href="projetos.html"class="menu-link"></a>Projetos
+                                <a href="#projetos"class="menu-link">Projetos</a>
                             </li>
                         <li class="menu_item">
                             <a  href="orcamento.html"class="menu-link">
@@ -42,172 +45,174 @@
             </nav>
         </header>
         <div class="suspiro_header"></div>
-
         <section class="projetos" id="projetos">
             <div class="row_projeto">
                 <div class="columm_one">
-                    <div class="sala" onclick="scroll_cadastro()">
-                        <img src="img/projetos/01.jpg">
-                        <img src="img/projetos/02.jpg">
-                        <img src="img/projetos/03.jpg">
-                        <img src="img/projetos/04.jpg">
-                        <img src="img/projetos/05.jpg">
-                        <img src="img/projetos/06.jpg">
-                        <img src="img/projetos/07.jpg">
-                        <img src="img/projetos/08.jpg">
-                        <img src="img/projetos/09.jpg">
-                        <img src="img/projetos/10.jpg">
-                        <img src="img/projetos/11.jpg">
-                        <img src="img/projetos/12.jpg">
-                        <img src="img/projetos/13.jpg">
-                        <img src="img/projetos/14.jpg">
-                        <img src="img/projetos/15.jpg">
-                        <img src="img/projetos/16.jpg">
-                        <img src="img/projetos/17.jpg">
-                        <img src="img/projetos/18.jpg">
-                        <img src="img/projetos/19.jpg">
-                        <img src="img/projetos/20.jpg">
-                        <img src="img/projetos/21.jpg">
+                    <div class="sala">
+                        <img src="img/projetos/salas/01.jpg">
+                        <img src="img/projetos/salas/02.jpg">
+                        <img src="img/projetos/salas/03.jpg">
+                        <img src="img/projetos/salas/04.jpg">
+                        <img src="img/projetos/salas/05.jpg">
+                        <img src="img/projetos/salas/06.jpg">
+                        <img src="img/projetos/salas/07.jpg">
+                        <img src="img/projetos/salas/08.jpg">
+                        <img src="img/projetos/salas/09.jpg">
+                        <img src="img/projetos/salas/10.jpg">
+                        <img src="img/projetos/salas/11.jpg">
+                        <img src="img/projetos/salas/12.jpg">
+                        <img src="img/projetos/salas/13.jpg">
+                        <img src="img/projetos/salas/14.jpg">
+                        <img src="img/projetos/salas/15.jpg">
+                        <img src="img/projetos/salas/16.jpg">
+                        <img src="img/projetos/salas/17.jpg">
+                        <img src="img/projetos/salas/18.jpg">
+                        <img src="img/projetos/salas/19.jpg">
+                        <img src="img/projetos/salas/20.jpg">
+                        <img src="img/projetos/salas/21.jpg">
                     </div>
                     <h3>Salas</h3>
-                    <p>Sala de estar e Jantar<br> Requinte e sofisticação</p>
+                    <p>Sala de estar e Jantar<br>Requinte e sofisticação</p>
                 </div>
                 <div class="columm_tow">
                     <div class="cozinha">
-                        <img src="img/familia/01.jpg">
-                        <img src="img/familia/02.jpg">
-                        <img src="img/familia/03.jpg">
-                        <img src="img/familia/04.jpg">
-                        <img src="img/familia/05.jpg">
-                        <img src="img/familia/06.jpg">
-                        <img src="img/familia/07.jpg">
-                        <img src="img/familia/08.jpg">
-                        <img src="img/familia/09.jpg">
-                        <img src="img/familia/10.jpg">
-                        <img src="img/familia/11.jpg">
-                        <img src="img/familia/12.jpg">
-                        <img src="img/familia/13.jpg">
-                        <img src="img/familia/14.jpg">
-                        <img src="img/familia/15.jpg">
-                        <img src="img/familia/16.jpg">
-                        <img src="img/familia/17.jpg">
-                        <img src="img/familia/18.jpg">
-                        <img src="img/familia/19.jpg">
-                        <img src="img/familia/20.jpg">
-                        <img src="img/familia/21.jpg">
+                        <img src="img/projetos/cozinhas/01.jpg">
+                        <img src="img/projetos/cozinhas/02.jpg">
+                        <img src="img/projetos/cozinhas/03.jpg">
+                        <img src="img/projetos/cozinhas/04.jpg">
+                        <img src="img/projetos/cozinhas/05.jpg">
+                        <img src="img/projetos/cozinhas/06.jpg">
+                        <img src="img/projetos/cozinhas/07.jpg">
+                        <img src="img/projetos/cozinhas/08.jpg">
+                        <img src="img/projetos/cozinhas/09.jpg">
+                        <img src="img/projetos/cozinhas/10.jpg">
+                        <img src="img/projetos/cozinhas/11.jpg">
+                        <img src="img/projetos/cozinhas/12.jpg">
+                        <img src="img/projetos/cozinhas/13.jpg">
+                        <img src="img/projetos/cozinhas/14.jpg">
+                        <img src="img/projetos/cozinhas/15.jpg">
+                        <img src="img/projetos/cozinhas/16.jpg">
+                        <img src="img/projetos/cozinhas/17.jpg">
+                        <img src="img/projetos/cozinhas/18.jpg">
+                        <img src="img/projetos/cozinhas/19.jpg">
+                        <img src="img/projetos/cozinhas/20.jpg">
+                        <img src="img/projetos/cozinhas/21.jpg">
                     </div>
                     <h3>Cozinhas</h3>
-                    <p>Cozinhas e Sacadas<br>Menos é mais!</p>
+                    <p>Cozinhas e Sacadas<br>Ambientes funcionais e dinâmicos!</p>
                 </div>
                 <div class="columm_tree">
                     <div class="dormitorio">
-                        <img src="img/musica/01.jpg">
-                        <img src="img/musica/02.jpg">
-                        <img src="img/musica/03.jpg">
-                        <img src="img/musica/04.jpg">
-                        <img src="img/musica/05.jpg">
-                        <img src="img/musica/06.jpg">
-                        <img src="img/musica/07.jpg">
-                        <img src="img/musica/08.jpg">
-                        <img src="img/musica/09.jpg">
-                        <img src="img/musica/10.jpg">
-                        <img src="img/musica/11.jpg">
-                        <img src="img/musica/12.jpg">
-                        <img src="img/musica/13.jpg">
-                        <img src="img/musica/14.jpg">
-                        <img src="img/musica/15.jpg">
-                        <img src="img/musica/16.jpg">
-                        <img src="img/musica/17.jpg">
-                        <img src="img/musica/18.jpg">
-                        <img src="img/musica/19.jpg">
-                        <img src="img/musica/20.jpg">
-                        <img src="img/musica/21.jpg">
+                        <img src="img/projetos/dormitorios/01.jpg">
+                        <img src="img/projetos/dormitorios/02.jpg">
+                        <img src="img/projetos/dormitorios/03.jpg">
+                        <img src="img/projetos/dormitorios/04.jpg">
+                        <img src="img/projetos/dormitorios/05.jpg">
+                        <img src="img/projetos/dormitorios/06.jpg">
+                        <img src="img/projetos/dormitorios/07.jpg">
+                        <img src="img/projetos/dormitorios/08.jpg">
+                        <img src="img/projetos/dormitorios/09.jpg">
+                        <img src="img/projetos/dormitorios/10.jpg">
+                        <img src="img/projetos/dormitorios/11.jpg">
+                        <img src="img/projetos/dormitorios/12.jpg">
+                        <img src="img/projetos/dormitorios/13.jpg">
+                        <img src="img/projetos/dormitorios/14.jpg">
+                        <img src="img/projetos/dormitorios/15.jpg">
+                        <img src="img/projetos/dormitorios/16.jpg">
+                        <img src="img/projetos/dormitorios/17.jpg">
+                        <img src="img/projetos/dormitorios/18.jpg">
+                        <img src="img/projetos/dormitorios/19.jpg">
+                        <img src="img/projetos/dormitorios/20.jpg">
+                        <img src="img/projetos/dormitorios/21.jpg">
                     </div>
                     <h3>Dormitórios</h3>
-                    <p>Suites e Quartos<br> O conforto é aqui!</p>
+                    <p>Suites e Quartos<br> O conforto e praticidade!</p>
                 </div>
             </div>
         </section>
+        <div class="indicativo">
+                <a href="#portfolio"class="menu-link"><i class="fas fa-caret-square-down fa-2x"></i></a>
+            </div>
         <div class="suspiro"></div>
         <section class="portfolio" id="portfolio">
             <div class="row_portifolio">
                 <div class="columm_one">
                     <div class="minha_familia" onclick="scroll_cadastro()">
-                        <img src="img/projetos/01.jpg">
-                        <img src="img/projetos/02.jpg">
-                        <img src="img/projetos/03.jpg">
-                        <img src="img/projetos/04.jpg">
-                        <img src="img/projetos/05.jpg">
-                        <img src="img/projetos/06.jpg">
-                        <img src="img/projetos/07.jpg">
-                        <img src="img/projetos/08.jpg">
-                        <img src="img/projetos/09.jpg">
-                        <img src="img/projetos/10.jpg">
-                        <img src="img/projetos/11.jpg">
-                        <img src="img/projetos/12.jpg">
-                        <img src="img/projetos/13.jpg">
-                        <img src="img/projetos/14.jpg">
-                        <img src="img/projetos/15.jpg">
-                        <img src="img/projetos/16.jpg">
-                        <img src="img/projetos/17.jpg">
-                        <img src="img/projetos/18.jpg">
-                        <img src="img/projetos/19.jpg">
-                        <img src="img/projetos/20.jpg">
-                        <img src="img/projetos/21.jpg">
+                        <img src="img/portfolio/familia/01.jpg">
+                        <img src="img/portfolio/familia/02.jpg">
+                        <img src="img/portfolio/familia/03.jpg">
+                        <img src="img/portfolio/familia/04.jpg">
+                        <img src="img/portfolio/familia/05.jpg">
+                        <img src="img/portfolio/familia/06.jpg">
+                        <img src="img/portfolio/familia/07.jpg">
+                        <img src="img/portfolio/familia/08.jpg">
+                        <img src="img/portfolio/familia/09.jpg">
+                        <img src="img/portfolio/familia/10.jpg">
+                        <img src="img/portfolio/familia/11.jpg">
+                        <img src="img/portfolio/familia/12.jpg">
+                        <img src="img/portfolio/familia/13.jpg">
+                        <img src="img/portfolio/familia/14.jpg">
+                        <img src="img/portfolio/familia/15.jpg">
+                        <img src="img/portfolio/familia/16.jpg">
+                        <img src="img/portfolio/familia/17.jpg">
+                        <img src="img/portfolio/familia/18.jpg">
+                        <img src="img/portfolio/familia/19.jpg">
+                        <img src="img/portfolio/familia/20.jpg">
+                        <img src="img/portfolio/familia/21.jpg">
                     </div>
                     <h3>Família</h3>
                     <p>Minha Família<br>Saudades!</p>
                 </div>
                 <div class="columm_tow">
                     <div class="meus_parentes">
-                        <img src="img/familia/01.jpg">
-                        <img src="img/familia/02.jpg">
-                        <img src="img/familia/03.jpg">
-                        <img src="img/familia/04.jpg">
-                        <img src="img/familia/05.jpg">
-                        <img src="img/familia/06.jpg">
-                        <img src="img/familia/07.jpg">
-                        <img src="img/familia/08.jpg">
-                        <img src="img/familia/09.jpg">
-                        <img src="img/familia/10.jpg">
-                        <img src="img/familia/11.jpg">
-                        <img src="img/familia/12.jpg">
-                        <img src="img/familia/13.jpg">
-                        <img src="img/familia/14.jpg">
-                        <img src="img/familia/15.jpg">
-                        <img src="img/familia/16.jpg">
-                        <img src="img/familia/17.jpg">
-                        <img src="img/familia/18.jpg">
-                        <img src="img/familia/19.jpg">
-                        <img src="img/familia/20.jpg">
-                        <img src="img/familia/21.jpg">
+                        <img src="img/portfolio/musica/01.jpg">
+                        <img src="img/portfolio/musica/02.jpg">
+                        <img src="img/portfolio/musica/03.jpg">
+                        <img src="img/portfolio/musica/04.jpg">
+                        <img src="img/portfolio/musica/05.jpg">
+                        <img src="img/portfolio/musica/06.jpg">
+                        <img src="img/portfolio/musica/07.jpg">
+                        <img src="img/portfolio/musica/08.jpg">
+                        <img src="img/portfolio/musica/09.jpg">
+                        <img src="img/portfolio/musica/10.jpg">
+                        <img src="img/portfolio/musica/11.jpg">
+                        <img src="img/portfolio/musica/12.jpg">
+                        <img src="img/portfolio/musica/13.jpg">
+                        <img src="img/portfolio/musica/14.jpg">
+                        <img src="img/portfolio/musica/15.jpg">
+                        <img src="img/portfolio/musica/16.jpg">
+                        <img src="img/portfolio/musica/17.jpg">
+                        <img src="img/portfolio/musica/18.jpg">
+                        <img src="img/portfolio/musica/19.jpg">
+                        <img src="img/portfolio/musica/20.jpg">
+                        <img src="img/portfolio/musica/21.jpg">
                     </div>
                     <h3>Parentes</h3>
                     <p>Meus pais e familia<br>Saudades!</p>
                 </div>
                 <div class="columm_tree">
                     <div class="meus_amigos">
-                        <img src="img/musica/01.jpg">
-                        <img src="img/musica/02.jpg">
-                        <img src="img/musica/03.jpg">
-                        <img src="img/musica/04.jpg">
-                        <img src="img/musica/05.jpg">
-                        <img src="img/musica/06.jpg">
-                        <img src="img/musica/07.jpg">
-                        <img src="img/musica/08.jpg">
-                        <img src="img/musica/09.jpg">
-                        <img src="img/musica/10.jpg">
-                        <img src="img/musica/11.jpg">
-                        <img src="img/musica/12.jpg">
-                        <img src="img/musica/13.jpg">
-                        <img src="img/musica/14.jpg">
-                        <img src="img/musica/15.jpg">
-                        <img src="img/musica/16.jpg">
-                        <img src="img/musica/17.jpg">
-                        <img src="img/musica/18.jpg">
-                        <img src="img/musica/19.jpg">
-                        <img src="img/musica/20.jpg">
-                        <img src="img/musica/21.jpg">
+                        <img src="img/portfolio/parentes/01.jpg">
+                        <img src="img/portfolio/parentes/02.jpg">
+                        <img src="img/portfolio/parentes/03.jpg">
+                        <img src="img/portfolio/parentes/04.jpg">
+                        <img src="img/portfolio/parentes/05.jpg">
+                        <img src="img/portfolio/parentes/06.jpg">
+                        <img src="img/portfolio/parentes/07.jpg">
+                        <img src="img/portfolio/parentes/08.jpg">
+                        <img src="img/portfolio/parentes/09.jpg">
+                        <img src="img/portfolio/parentes/10.jpg">
+                        <img src="img/portfolio/parentes/11.jpg">
+                        <img src="img/portfolio/parentes/12.jpg">
+                        <img src="img/portfolio/parentes/13.jpg">
+                        <img src="img/portfolio/parentes/14.jpg">
+                        <img src="img/portfolio/parentes/15.jpg">
+                        <img src="img/portfolio/parentes/16.jpg">
+                        <img src="img/portfolio/parentes/17.jpg">
+                        <img src="img/portfolio/parentes/18.jpg">
+                        <img src="img/portfolio/parentes/19.jpg">
+                        <img src="img/portfolio/parentes/20.jpg">
+                        <img src="img/portfolio/parentes/21.jpg">
                     </div>
                     <h3>Amigos</h3>
                     <p>Shows e eventos<br> shows e eventos!</p>
@@ -215,8 +220,22 @@
             </div>
         </section>
         <footer class="footer">
-            <p>Desenvolvido por Marcelo Santos, aluno BandTec&COPY; 2020</p>
-        </footer>
+                <p>Desenvolvido por Marcelo Santos, aluno BandTec&COPY; 2020</p>
+                <p id="b_usuario"></p>
+            <nav class="nav">
+                <ul class="list">
+                    <li class="menu_footer">
+                        <a href="https://www.linkedin.com/in/marcelo-santos-00093984/"class="menu-link">
+                            <i class="fab fa-linkedin fa-2x"></i></a>
+                    </li>
+                    <li class="menu_footer">
+                        <a href="https://github.com/marcelolsanto"class="menu-link"><i class="fab fa-github-square fa-2x"></i></a>
+                    </li>
+                    <li class="menu_footer">
+                        <a href="https://www.instagram.com/marcelolsantos30/"class="menu-link"><i class="fab fa-instagram-square fa-2x"></i></a>
+                    </li>
+                </nav>
+            </footer>
     </div>
 </body>
 <script src="javaScript/index.js"></script>

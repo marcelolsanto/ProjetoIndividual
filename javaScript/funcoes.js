@@ -15,7 +15,7 @@ function verificar_autenticacao() {
     nome_usuario = sessionStorage.nome_usuario_meuapp;
     
     if (login_usuario == undefined)  {
-        redirecionar_cadastro();
+        redirecionar_login();
     } else {
         b_usuario.innerHTML = nome_usuario;
         validar_sessao();
@@ -25,7 +25,7 @@ function verificar_autenticacao() {
 function logoff() {
     finalizar_sessao();
     sessionStorage.clear();
-    redirecionar_cadastro();
+    redirecionar_login();
 }
 
 function validar_sessao() {

@@ -3,8 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto individual | Marcelo Santos</title>
+    <title>Sobre | Marcelo Santos</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
     <link rel="stylesheet" href="css/sobre.css">
+    <script src="https://kit.fontawesome.com/729e0ee7d1.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="javaScript/funcoes.js"></script>
 </head>
 <script>
@@ -45,18 +50,51 @@
                 <img src="img/sacada.jpg">
             </div>
             <div class="banner_sobre">
-                <div class="card">
-                    <h3>Portfólios de Projetos</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore sequi iure molestiae repellat? In harum ullam, temporibus sapiente quod enim sequi ad delectus dolor atque optio eligendi voluptates facilis quibusdam!</p>
-                    <button onclick="scroll_portfolio()" id="btn2"class="btn_home">Saiba Mais!
+                <div id="div_organizacao" class="organizacao">
+                    <h3 id="h3_organizacao" style="display: none">Organização</h3>
+                    <p id="p_organizacao"style="display: none">Comece mudando você antes de querer mudar o mundo.<br>
+                        Mantenha sua casa em ordem antes de criticar o mundo!</p>
+                    <button id="btn_organizacao1"class="btn_home" onclick="mostrar_organizacão()">Organização!
+                    </button>
+                    <button id="btn_organizacao2"class="btn_home" onclick="ocultar_organizacao()" style="display: none">Organização!
+                        </button>
+                </div>
+                <div class="criatividade">
+                    <h3 id="h3_criatividade" style="display: none">Criatividade</h3>
+                    <p id="p_criatividade" style="display: none">Criatividade é a liberdade de permitir a si mesmo cometer erros.<br>Arte é a liberdade de saber quais erros manter!</p>
+                    <button id="btn_criatividade1"class="btn_home" onclick="mostrar_criatividade()">Talento!
+                    </button>
+                    <button id="btn_criatividade2"class="btn_home" onclick="ocultar_criatividade()"style="display: none">Talento!
+                    </button>
+                </div>
+                <div class="compromisso">
+                    <h3 id="h3_compromisso" style="display: none" >Compromisso</h3>
+                    <p id="p_compromisso" style="display: none">Persiga o que é significativo e não o que é conveniente.<br>Não minta para você mesmo.<br>Seja claro no seu discurso!</p>
+                    <button id="btn_compromisso1"class="btn_home"onclick="mostar_compromisso()">Compromisso!
+                    </button>
+                    <button style="display: none" id="btn_compromisso2"class="btn_home"onclick="ocultar_compromisso()">Compromisso!
                     </button>
                 </div>
             </div>
         </section>
 
         <footer class="footer">
-            <p>Desenvolvido por Marcelo Santos, aluno BandTec&COPY; 2020</p>
-        </footer>
+                <p>Desenvolvido por Marcelo Santos, aluno BandTec&COPY; 2020</p>
+                <p id="b_usuario"></p>
+            <nav class="nav">
+                <ul class="list">
+                    <li class="menu_footer">
+                        <a href="https://www.linkedin.com/in/marcelo-santos-00093984/"class="menu-link">
+                            <i class="fab fa-linkedin fa-2x"></i></a>
+                    </li>
+                    <li class="menu_footer">
+                        <a href="https://github.com/marcelolsanto"class="menu-link"><i class="fab fa-github-square fa-2x"></i></a>
+                    </li>
+                    <li class="menu_footer">
+                        <a href="https://www.instagram.com/marcelolsantos30/"class="menu-link"><i class="fab fa-instagram-square fa-2x"></i></a>
+                    </li>
+                </nav>
+            </footer>
     </div>
 </body>
 <script src="javaScript/index.js"></script>
