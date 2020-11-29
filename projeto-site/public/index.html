@@ -66,25 +66,25 @@
         <section class="projetos" id="valores">
             <div class="row_valores">
                 <div class="columm_one">
-                    <div class="missao" onclick="scroll_cadastro()">
+                    <div class="missao" onclick="mostrar_ocultar_missao()">
                         <img src="img/missao.png">
                     </div>
-                    <h3>Missão</h3>
-                    <p>"A liberdade é a possibilidade do isolamento".<br>Fernando Pessoa.</p>
+                    <h3 style="display: none" id="h3_missao">Missão</h3>
+                    <p style="display: none" id="p_missao">"A liberdade é a possibilidade do isolamento".<br>Fernando Pessoa.</p>
                 </div>
-                <div class="columm_tow">
+                <div class="columm_tow" onclick="mostrar_ocultar_visao()">
                     <div class="cozinha">
                         <img src="img/visao.png">
                     </div>
-                    <h3>Visão</h3>
-                    <p>"O conhecimento passou a ser o principal fator de produção e geração de riquezas". </p>
+                    <h3 id="h3_visao" style="display: none">Visão</h3>
+                    <p id="p_visao" style="display: none">"O conhecimento passou a ser o principal fator de produção e geração de riquezas". </p>
                 </div>
-                <div class="columm_tree">
+                <div class="columm_tree" onclick="mostrar_ocultar_valor()">
                     <div class="dormitorio">
                         <img src="img/valores.png">
                      </div>
-                    <h3>Valor</h3>
-                    <p>"Só amamos aquilo que conhecemos"<br>St° Agostinho. </p>
+                    <h3 id="h3_valor" style="display: none">Valor</h3>
+                    <p id="p_valor" style="display: none">"Só amamos aquilo que conhecemos"<br>St° Agostinho. </p>
                 </div>
             </div>
         </section>
