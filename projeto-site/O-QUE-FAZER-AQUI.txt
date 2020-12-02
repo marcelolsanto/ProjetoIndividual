@@ -30,3 +30,5 @@ OBS: Às vezes a atualização automática prometida no item #6.1 simplesmente n
 2. Em models, altere o arquivo "usuario.js" para que reflita sua tabela de usuários no SEU banco de dados.
 
 3. Em routes, altere o arquivo "usuarios.js" para que os comandos sejam corretamente referenciados à tabela de usuários no SEU banco de dados.
+
+https://marcelosantos.azurewebsites.net
