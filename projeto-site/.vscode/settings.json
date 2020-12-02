@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/226b8e75-47a0-4173-8c32-396ed6406e62/resourceGroups/BandTec/providers/Microsoft.Web/sites/MarceloSantos",
+    "appService.deploySubpath": ""
+}
