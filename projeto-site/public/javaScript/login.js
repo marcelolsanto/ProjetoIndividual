@@ -7,18 +7,13 @@ function entrar() {
     }).then(resposta => {
 
         if (resposta.ok) {
-
             resposta.json().then(json => {
-
                 sessionStorage.login_usuario_meuapp = json.login;
                 sessionStorage.nome_usuario_meuapp = json.nome;
-
                 window.location.href = 'index.html';
             });
-
         } else {
             console.log('Erro de login!');
-            
             resposta.text().then(texto => {
                 console.error(texto);
                 finalizar_aguardar(texto);
@@ -26,7 +21,6 @@ function entrar() {
             });
         }
     });
-
     return false;
 }
 

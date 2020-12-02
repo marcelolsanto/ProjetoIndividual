@@ -9,13 +9,12 @@ function redirecionar_cadastro() {
     window.location.href = 'cadastro.html';
 }
 
-
 function verificar_autenticacao() {
     login_usuario = sessionStorage.login_usuario_meuapp;
     nome_usuario = sessionStorage.nome_usuario_meuapp;
     
     if (login_usuario == undefined)  {
-        redirecionar_login();
+        redirecionar_cadastro();
     } else {
         b_usuario.innerHTML = nome_usuario;
         validar_sessao();

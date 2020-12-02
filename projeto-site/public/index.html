@@ -8,11 +8,14 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
     <link rel="manifest" href="favicon_io/site.webmanifest">
-    
     <script src="https://kit.fontawesome.com/729e0ee7d1.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="javaScript/funcoes.js"></script>
 </head>
-<body>
+<script>
+    let usuario;
+    verificar_autenticacao();
+</script>
+<body onload="verificar_autenticacao()">
     <div class="container">
         <header class="head">
             <div class="head_imag">
