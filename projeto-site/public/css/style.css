@@ -11,23 +11,24 @@ html{
 .container{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 .head {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.05));
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
     position: fixed;
-    height: 170px;
+    height: 15rem;
     width: 100%;
     z-index: 1;
 }
 .head_imag{
-    height: 8rem;
-    width: 8rem;
+    height: 5rem;
+    width: 5rem;
     position: relative;
-    left: 5rem;
     overflow: hidden;
     border: 10px;
     border-radius: 10px;
@@ -48,15 +49,12 @@ html{
 }
 .head_menu{
     position: relative;
-
 }
 .menu {
-    width: 45rem;
-    position: relative;
-    right: 5rem;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     text-shadow: 2.5px 2.5px 10px rgb(0, 0, 0);
     cursor: pointer;
 }
@@ -70,7 +68,7 @@ html{
     text-shadow: 0 0 5px rgba(85, 84, 84, 
     0.3);
     font-family:Arial, Helvetica, sans-serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 #home {
     width: 100%;
@@ -108,10 +106,10 @@ html{
     align-content: center;
 }
 .banner_home .card {
-    left: 5rem;
     position: relative;
-    width: 530px;
-    height: 300px;
+    left: 36px;
+    width: 80%;
+    height: 13rem;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -125,19 +123,18 @@ h3{
     rgb(0, 0, 0);
     text-align: center;
     font-family:Arial, Helvetica, sans-serif;
-    font-size: 2rem;
-}
-p{
-    color:white;
-    text-shadow: 2px 2px 10px 
-    rgb(0, 0, 0);
-    text-align: center;
-    font-family:Arial, Helvetica, sans-serif;
     font-size: 1.5rem;
 }
+p{
+    color: white;
+    text-shadow: 2px 2px 10px rgb(0, 0, 0);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
 .mail {
-    height: 3rem;
-    width: 330px;
+    height: 2rem;
+    width: 200px;
     border-radius: 7px;
     box-shadow: 2.5px 2.5px 4px rgb(0, 0, 0);
     color: black;
@@ -151,7 +148,7 @@ p{
 }
 .mail1{
     height: 2rem;
-    width: 330px;
+    width: 200px;
     border-radius: 7px;
     box-shadow: 2.5px 2.5px 4px rgb(0, 0, 0);
     color: black;
@@ -165,9 +162,8 @@ p{
     transition-duration: .9s;
 }
 .btn_home{
-    height: 3rem;
-    width: 150px;
-    margin-left: 5px;
+    height: 2rem;
+    width: 200px;
     color: whitesmoke;
     background: linear-gradient(to bottom, rgb(168, 84, 84), rgb(110, 30, 30));
     border-radius: 7px;
@@ -185,23 +181,25 @@ p{
 
 #valores{
     width: 100%;
-    height: 89vh;
+    height: 80rem;
     overflow: hidden;
     background: linear-gradient(to top, rgb(168, 84, 84), rgb(110, 30, 30));
 }
 .row_valores{
-    width: 100%;
     position: relative;
-    top: 11rem;
+    height: 54rem;
+    top: 20rem;
+    padding: 2.5rem;
     display: flex;
-    flex-direction: row;
-    align-content: center;
+    flex-direction: column;
     justify-content: space-between;
+    align-content: center;
 }
 .missao{
     width: 100%;
     height: 100%;
     display: flex;
+    flex-direction: row;
 }
 .cozinha{
     width: 100%;
@@ -216,11 +214,10 @@ p{
     flex-direction: row;
 }
 .columm_one{
-    width: 28%;
-    height: 58vh;
+    width: 100%;
+    height: 44vh;
     overflow: hidden;
     position: relative;
-    right: -5rem;
     background-color: transparent;
     border-radius: 10px;
     box-shadow: 2.5px 2.5px 10px  rgb(0, 0, 0);
@@ -232,8 +229,8 @@ p{
 }
 
 .columm_tow{
-    width: 28%;
-    height: 58vh;
+    width: 100%;
+    height: 44vh;
     overflow: hidden;
     background-color: transparent;
     border-radius: 10px;
@@ -246,10 +243,9 @@ p{
 }
 
 .columm_tree{
-    width: 28%;
-    height: 58vh;
+    width: 100%;
+    height: 44vh;
     position: relative;
-    left: -5rem;
     overflow: hidden;
     background-color: transparent;
     border-radius: 10px;
@@ -311,15 +307,14 @@ p{
 .footer{
     background: linear-gradient(to bottom, rgb(168, 84, 84), rgb(110, 30, 30));
     width: 100%;
-    height: 10vh;
+    height: 5rem;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
     align-items: center;
 }
 .footer p{
     position: relative;
-    left:5rem;
     font-size: 1rem;
 }
 .suspiro {
@@ -341,13 +336,10 @@ p{
 a:-webkit-any-link {
     color: white;
 }
-.nav {
 
-}
 .nav .list {
     position: relative;
     width: 10rem;
-    left: -5rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -383,10 +375,406 @@ a:-webkit-any-link {
     transition-duration: .9s;
 }
 .fa, .fas{
-    font-weight: 900;
     position: fixed;
-    bottom: 4rem;
-    right: 1.5rem;
+    bottom: 5rem;
+    right: 9.1rem;
     color: white;
     z-index: 3;
+}
+
+@media screen and (min-width: 1280px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-decoration: none;
+        border: none;
+    }
+    html{
+        scroll-behavior: smooth;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .head {
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.05));
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        height: 170px;
+        width: 100%;
+        z-index: 1;
+    }
+    .head_imag{
+        height: 8rem;
+        width: 8rem;
+        position: relative;
+        left: 5rem;
+        overflow: hidden;
+        border: 10px;
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.8);
+        cursor: pointer;
+    }
+    .head_imag img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        opacity: .95;
+        box-shadow: 2.5px 2.5px 10px  rgb(0, 0, 0);
+        opacity: .95;
+    }
+    .head_imag:hover{
+        box-shadow: 2.5px 2.5px 10px  rgb(255, 166, 165);
+        transition-duration: .9s;
+    }
+    .head_menu{
+        position: relative;
+    
+    }
+    .menu {
+        width: 45rem;
+        position: relative;
+        right: 5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-shadow: 2.5px 2.5px 10px rgb(0, 0, 0);
+        cursor: pointer;
+    }
+    .menu :hover{
+        color: #B2423F;
+        text-shadow: 2.5px 2.5px 10px  rgb(255, 166, 165);
+        transition-duration: .9s;
+    }
+    .menu_item{
+        color: white;
+        text-shadow: 0 0 5px rgba(85, 84, 84, 
+        0.3);
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 2rem;
+    }
+    #home {
+        width: 100%;
+        height: 99vh;
+        overflow: hidden;
+    }
+    .home_imag{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background-color: rgba(0, 0, 0, 0.99);
+    }
+    .home_imag img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.95;
+        transition: ease-in-out;
+        animation-name: zoom;
+        animation-duration: 30s;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes zoom {
+        0%,100% {transform: scale(1);}
+        50% {transform: scale(1.2);}
+    }
+    .banner_home {
+        position: relative;
+        width: 100%;
+        bottom: 20rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        align-content: center;
+    }
+    .banner_home .card {
+        left: 5rem;
+        position: relative;
+        width: 530px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        border-radius: 10px;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.05));
+    }
+    h3{
+        color: white;
+        text-shadow: 3px 3px 10px 
+        rgb(0, 0, 0);
+        text-align: center;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 2rem;
+    }
+    p{
+        color:white;
+        text-shadow: 2px 2px 10px 
+        rgb(0, 0, 0);
+        text-align: center;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 1.5rem;
+    }
+    .mail {
+        height: 3rem;
+        width: 330px;
+        border-radius: 7px;
+        box-shadow: 2.5px 2.5px 4px rgb(0, 0, 0);
+        color: black;
+        text-align: center;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 1rem;
+    }
+    .mail:hover{
+        box-shadow: 2.5px 2.5px 10px  rgb(255, 166, 165);
+        transition-duration: .9s;
+    }
+    .mail1{
+        height: 2rem;
+        width: 330px;
+        border-radius: 7px;
+        box-shadow: 2.5px 2.5px 4px rgb(0, 0, 0);
+        color: black;
+        background-color: white;
+        text-align: center;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 1rem;
+    }
+    .mail1:hover{
+        box-shadow: 2.5px 2.5px 10px  rgb(255, 166, 165);
+        transition-duration: .9s;
+    }
+    .btn_home{
+        height: 3rem;
+        width: 150px;
+        margin-left: 5px;
+        color: whitesmoke;
+        background: linear-gradient(to bottom, rgb(168, 84, 84), rgb(110, 30, 30));
+        border-radius: 7px;
+        box-shadow: 2.5px 2.5px 4px rgb(0, 0, 0);
+        text-align: center;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+    .btn_home:hover {
+        background: linear-gradient(to top, rgb(168, 84, 84), rgb(110, 30, 30));
+        box-shadow: 2.5px 2.5px 10px  rgb(255, 166, 165);
+        transition-duration: .9s;
+    }
+    
+    #valores{
+        width: 100%;
+        height: 89vh;
+        overflow: hidden;
+        background: linear-gradient(to top, rgb(168, 84, 84), rgb(110, 30, 30));
+    }
+    .row_valores{
+        width: 100%;
+        position: relative;
+        top: 11rem;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: space-between;
+    }
+    .missao{
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
+    .cozinha{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    .dormitorio{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    .columm_one{
+        width: 28%;
+        height: 58vh;
+        overflow: hidden;
+        position: relative;
+        right: -5rem;
+        background-color: transparent;
+        border-radius: 10px;
+        box-shadow: 2.5px 2.5px 10px  rgb(0, 0, 0);
+        cursor: pointer;
+    }
+    .columm_one:hover{
+        box-shadow: 2.5px 2.5px 10px  rgb(255, 166, 165);
+        transition-duration: .9s;
+    }
+    
+    .columm_tow{
+        width: 28%;
+        height: 58vh;
+        overflow: hidden;
+        background-color: transparent;
+        border-radius: 10px;
+        box-shadow: 2.5px 2.5px 10px  rgb(0, 0, 0);
+        cursor: pointer;
+    }
+    .columm_tow:hover{
+        box-shadow: 2.5px 2.5px 10px  rgb(255, 166, 165);
+        transition-duration: .9s;
+    }
+    
+    .columm_tree{
+        width: 28%;
+        height: 58vh;
+        position: relative;
+        left: -5rem;
+        overflow: hidden;
+        background-color: transparent;
+        border-radius: 10px;
+        box-shadow: 2.5px 2.5px 10px  rgb(0, 0, 0);
+        cursor: pointer;
+    }
+    .columm_tree:hover{
+        box-shadow: 2.5px 2.5px 10px  rgb(255, 166, 165);
+        transition-duration: .9s;
+    }
+    
+    .missao img{
+        object-fit: scale-down;
+        opacity: 0.5;
+        height: 100%;
+    }
+    
+    .cozinha img{
+        object-fit: scale-down;
+        opacity: 0.5;
+        height: 100%;
+    
+    }
+    
+    .dormitorio img{
+        object-fit: scale-down;
+        opacity: 0.5;
+        height: 100%;
+        }
+    
+    .columm_one h3{
+        position: relative;
+        bottom: 8.5rem;
+    }
+    .columm_one p{
+        position: relative;
+        bottom: 8rem;
+        text-align: center;
+    }
+    .columm_tow h3{
+        position: relative;
+        bottom: 8.5rem;
+    }
+    .columm_tow p{
+        position: relative;
+        bottom: 8rem;
+        text-align: center;
+    }
+    .columm_tree h3{
+        position: relative;
+        bottom: 8.5rem;
+    }
+    .columm_tree p{
+        position: relative;
+        bottom: 8rem;
+        text-align: center;
+    }
+    
+    .footer{
+        background: linear-gradient(to bottom, rgb(168, 84, 84), rgb(110, 30, 30));
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footer p{
+        position: relative;
+        left:5rem;
+        font-size: 1rem;
+    }
+    .suspiro {
+        background: linear-gradient(to bottom, rgb(168, 84, 84), rgb(110, 30, 30));
+        height: 1vh;
+        width: 100%;
+    }
+    .suspiro .p{
+        font-size: 1rem;
+    }
+    .suspiro_header {
+        background-color: black;
+        height: 1vh;
+        width: 100%;
+        position: fixed;
+        top: 0px;
+    }
+    
+    a:-webkit-any-link {
+        color: white;
+    }
+    .nav {
+    
+    }
+    .nav .list {
+        position: relative;
+        width: 10rem;
+        left: -5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-shadow: 2.5px 2.5px 10px rgb(0, 0, 0);
+        cursor: pointer;
+    }
+    
+    .menu_footer{
+        text-shadow: 2.5px 2.5px 10px rgb(0, 0, 0);
+        cursor: pointer;
+    }
+    .menu_footer :hover{
+        text-shadow: 2.5px 2.5px 10px  rgb(255, 166, 165);
+        transition-duration: .9s;
+    }
+    
+    .indicativo{
+        text-shadow: 2.5px 2.5px 10px rgb(0, 0, 0);
+        cursor: pointer;
+        transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+        animation-name: indicativo;
+        animation-duration:1s;
+        animation-delay: 2s;
+        animation-iteration-count: 5;
+    }
+    @keyframes indicativo {
+        0%,100% {transform: translateY(0rem);}
+        50% {transform: translateY(4rem);}
+    }
+    .indicativo :hover{
+        text-shadow: 2.5px 2.5px 10px  rgb(255, 166, 165);
+        transition-duration: .9s;
+    }
+    .fa, .fas{
+        font-weight: 900;
+        position: fixed;
+        bottom: 4rem;
+        right: 1.5rem;
+        color: white;
+        z-index: 3;
+    }
+
 }
