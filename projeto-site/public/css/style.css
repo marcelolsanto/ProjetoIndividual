@@ -187,12 +187,12 @@ p{
 }
 .row_valores{
     position: relative;
-    height: 80%;
+    height: 65%;
     top: 10em;
     padding: 2.5rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-content: center;
 }
 .missao{
@@ -374,7 +374,7 @@ a:-webkit-any-link {
     transition-duration: .9s;
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1366px) {
 
     * {
         margin: 0;
@@ -571,6 +571,7 @@ a:-webkit-any-link {
         width: 100%;
         position: relative;
         top: 11rem;
+        padding: 0rem;
         display: flex;
         flex-direction: row;
         align-content: center;
@@ -719,9 +720,7 @@ a:-webkit-any-link {
     a:-webkit-any-link {
         color: white;
     }
-    .nav {
-    
-    }
+
     .nav .list {
         position: relative;
         width: 10rem;
@@ -748,19 +747,9 @@ a:-webkit-any-link {
         cursor: pointer;
         transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
         animation-name: indicativo;
-        animation-duration:1s;
+        animation-duration: 1s;
         animation-delay: 2s;
         animation-iteration-count: 5;
-    }
-    @keyframes indicativo {
-        0%,100% {transform: translateY(0rem);}
-        50% {transform: translateY(4rem);}
-    }
-    .indicativo :hover{
-        text-shadow: 2.5px 2.5px 10px  rgb(255, 166, 165);
-        transition-duration: .9s;
-    }
-    .fa, .fas{
         font-weight: 900;
         position: fixed;
         bottom: 4rem;
@@ -769,4 +758,13 @@ a:-webkit-any-link {
         z-index: 3;
     }
 
+    @keyframes indicativo {
+        0%,100% {transform: translateY(0rem);}
+        50% {transform: translateY(4rem);}
+    }
+
+    .indicativo :hover{
+        text-shadow: 2.5px 2.5px 10px  rgb(255, 166, 165);
+        transition-duration: .9s;
+    }
 }
