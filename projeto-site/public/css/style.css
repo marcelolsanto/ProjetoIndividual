@@ -3,7 +3,7 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
-    border: none;
+    border: none; 
 }
 html{
     scroll-behavior: smooth;
@@ -121,14 +121,14 @@ h3{
     text-shadow: 3px 3px 10px 
     rgb(0, 0, 0);
     text-align: center;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:'Roboto', sans-serif;
     font-size: 1.6rem;
 }
 p{
     color: white;
     text-shadow: 2px 2px 10px rgb(0, 0, 0);
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:'Roboto', sans-serif;
     font-size: 1rem;
 }
 .mail {
@@ -502,10 +502,11 @@ a:-webkit-any-link {
         align-content: center;
     }
     .banner_home .card {
-        left: 5rem;
         position: relative;
-        width: 530px;
-        height: 300px;
+        left: 5rem;
+        top: -2rem;
+        width: 27rem;
+        height: 20rem;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -766,10 +767,6 @@ a:-webkit-any-link {
         animation-duration: 1s;
         animation-delay: 2s;
         animation-iteration-count: 5;
-        font-weight: 900;
-        position: fixed;
-        bottom: 4rem;
-        right: 1.5rem;
         color: white;
         z-index: 3;
     }
@@ -782,5 +779,17 @@ a:-webkit-any-link {
     .indicativo :hover{
         text-shadow: 2.5px 2.5px 10px  rgb(255, 166, 165);
         transition-duration: .9s;
+    }
+
+    .fa, .fas {
+        font-weight: 900;
+        position: fixed;
+        bottom: 12vh;
+        left: 97%;
+        transform: translateX(-50%);
+        color: white;
+        z-index: 3;
+        text-shadow: 2.5px 2.5px 10px rgb(32, 4, 4);
+        cursor: pointer;
     }
 }
