@@ -9,10 +9,10 @@ let sessoes = [];
 router.post('/autenticar', function(req, res, next) {
 	console.log('Recuperando usuário por login e senha');
 
-	var login = req.body.login; // depois de .body, use o nome (name) do campo em seu formulário de login
+	var email = req.body.email; // depois de .body, use o nome (name) do campo em seu formulário de login
 	var senha = req.body.senha; // depois de .body, use o nome (name) do campo em seu formulário de login	
 	
-	let instrucaoSql = `select * from usuario where email='${login}' and senha='${senha}'`;
+	let instrucaoSql = `select * from usuario where email='${email}' and senha='${senha}'`;
 	console.log(instrucaoSql);
 
 	sequelize.query(instrucaoSql, {
@@ -42,7 +42,7 @@ router.post('/cadastrar', function(req, res, next) {
 	
 	Usuario.create({
 		nome : req.body.nome,
-		login : req.body.login,
+		email : req.body.email,
 		senha: req.body.senha
 	}).then(resultado => {
 		console.log(`Registro criado: ${resultado}`)
@@ -57,7 +57,7 @@ router.post('/cadastrar', function(req, res, next) {
 	console.log('Criando um email');
 	
 	Newsletter.create({
-		login : req.body.login,
+		email : req.body.email,
 	}).then(resultado => {
 		console.log(`Registro criado: ${resultado}`)
         res.send(resultado);
@@ -68,20 +68,20 @@ router.post('/cadastrar', function(req, res, next) {
 });
 
 /* Verificação de usuário */
-router.get('/sessao/:login', function(req, res, next) {
-	let login = req.params.login;
-	console.log(`Verificando se o usuário ${login} tem sessão`);
+router.get('/sessao/:email', function(req, res, next) {
+	let email = req.params.email;
+	console.log(`Verificando se o usuário ${email} tem sessão`);
 	
 	let tem_sessao = false;
 	for (let u=0; u<sessoes.length; u++) {
-		if (sessoes[u] == login) {
+		if (sessoes[u] == email) {
 			tem_sessao = true;
 			break;
 		}
 	}
 
 	if (tem_sessao) {
-		let mensagem = `Usuário ${login} possui sessão ativa!`;
+		let mensagem = `Usuário ${email} possui sessão ativa!`;
 		console.log(mensagem);
 		res.send(mensagem);
 	} else {
@@ -91,17 +91,17 @@ router.get('/sessao/:login', function(req, res, next) {
 
 
 /* Logoff de usuário */
-router.get('/sair/:login', function(req, res, next) {
-	let login = req.params.login;
-	console.log(`Finalizando a sessão do usuário ${login}`);
+router.get('/sair/:email', function(req, res, next) {
+	let email = req.params.email;
+	console.log(`Finalizando a sessão do usuário ${email}`);
 	let nova_sessoes = []
 	for (let u=0; u<sessoes.length; u++) {
-		if (sessoes[u] != login) {
+		if (sessoes[u] != email) {
 			nova_sessoes.push(sessoes[u]);
 		}
 	}
 	sessoes = nova_sessoes;
-	res.send(`Sessão do usuário ${login} finalizada com sucesso!`);
+	res.send(`Sessão do usuário ${email} finalizada com sucesso!`);
 });
 
 /* Recuperar todos os usuários */
