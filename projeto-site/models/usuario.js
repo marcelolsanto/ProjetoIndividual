@@ -8,7 +8,7 @@ https://codewithhugo.com/sequelize-data-types-a-practical-guide/
 module.exports = (sequelize, DataTypes) => {
     let Usuario = sequelize.define('Usuario',{
 		id: {
-			field: 'id',
+			field: 'cpf',
 			type: DataTypes.INTEGER,
 			primaryKey: true,
 			autoIncrement: true
