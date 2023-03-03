@@ -7,12 +7,12 @@ let sessoes = [];
 
 /* Recuperar usuário por login e senha */
 router.post('/autenticar', function(req, res, next) {
-	console.log('Recuperando usuário por login e senha');
+	console.log('Recuperando usuário por email e senha');
 
 	var login = req.body.login; // depois de .body, use o nome (name) do campo em seu formulário de login
 	var senha = req.body.senha; // depois de .body, use o nome (name) do campo em seu formulário de login	
 	
-	let instrucaoSql = `select * from usuario where email='${login}' and senha='${senha}'`;
+	let instrucaoSql = `select * from usuario where email = '${login}' and senha='${senha}'`;
 	console.log(instrucaoSql);
 
 	sequelize.query(instrucaoSql, {
