@@ -5,10 +5,10 @@ var Usuario = require('../models').Usuario;
 let sessoes = [];
 /* Recuperar usuário por login e senha */
 router.post('/autenticar', (req, res) => {
-    console.log('Recuperando usuário por nome e senha');
+    console.log('Recuperando usuário por email e senha');
     var email = req.body.email; // depois de .body, use o nome (name) do campo em seu formulário de login
     var senha = req.body.senha; // depois de .body, use o nome (name) do campo em seu formulário de login	
-    let instrucaoSql = `select * from usuario where email= '${email}' and senha = '${senha}'`;
+    let instrucaoSql = `select * from usuario where email = '${email}' and senha = '${senha}'`;
     sequelize.query(instrucaoSql, { model: Usuario })
         .then(resultado => {
         if (resultado.length == 1) {
