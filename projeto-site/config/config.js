@@ -1,10 +1,10 @@
 module.exports = {
   production: {
     username: 'MarceloSantos',
-    password: '321456',
+    password: '#Gf71402730225',
     database: 'bd_marcelo',
-    host: 'localhost',
-    dialect: 'mysql',
+        host: 'marcelo.database.windows.net',
+    dialect: 'mssql',
     xuse_env_variable: 'DATABASE_URL',
     dialectOptions: {
       options: {
