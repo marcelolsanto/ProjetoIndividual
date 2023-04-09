@@ -1,14 +1,13 @@
 function entrar() {
     aguardar();
-    var formulario = new URLSearchParams(new FormData(form_login));
+    var formulario = new URLSearchParams(new FormData(form_email));
     fetch("/usuarios/autenticar", {
         method: "POST",
         body: formulario
     }).then(resposta => {
-
         if (resposta.ok) {
             resposta.json().then(json => {
-                sessionStorage.login_usuario_meuapp = json.login;
+                sessionStorage.email_usuario_meuapp = json.email;
                 sessionStorage.nome_usuario_meuapp = json.nome;
                 window.location.href = 'index.html';
             });
@@ -26,13 +25,11 @@ function entrar() {
 
 function aguardar() {
     btn_entrar.disabled = true;
-    //img_aguarde.style.visibility = 'visible';
     p3_mensagem.style.visibility = 'hidden';
 }
 
 function finalizar_aguardar(resposta) {
     btn_entrar.disabled = false;
-    //img_aguarde.style.visibility = 'hidden';
     p3_mensagem.style.visibility = 'visible';
     p3_mensagem.innerHTML = resposta;
 }

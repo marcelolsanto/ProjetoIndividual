@@ -1,14 +1,8 @@
-	'use strict';
-
-/* 
-lista e explicação dos Datatypes:
-https://codewithhugo.com/sequelize-data-types-a-practical-guide/
-*/
-
+'use strict';
 module.exports = (sequelize, DataTypes) => {
     let Usuario = sequelize.define('Usuario',{
 		id: {
-			field: 'cpf',
+			field: 'id',
 			type: DataTypes.INTEGER,
 			primaryKey: true,
 			autoIncrement: true
@@ -18,8 +12,8 @@ module.exports = (sequelize, DataTypes) => {
 			type: DataTypes.STRING,
 			allowNull: false
 		},
-		login: {
-			field: 'login',
+		email: {
+			field: 'email',
 			type: DataTypes.STRING,
 			allowNull: false
 		},
@@ -35,6 +29,5 @@ module.exports = (sequelize, DataTypes) => {
 		underscored: true,
 		timestamps: false,
 	});
-
 	return Usuario;
 };

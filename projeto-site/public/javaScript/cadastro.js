@@ -5,13 +5,9 @@ function cadastrar() {
         method: "POST",
         body: formulario
     }).then(function (response) {
-        
         if (response.ok) {
-
             window.location.href='login.html';
-
         } else {
-
             console.log('Erro de cadastro!');
             response.text().then(function (resposta) {
                 div_erro.innerHTML = resposta;
@@ -25,12 +21,10 @@ function cadastrar() {
 
 function aguardar() {
     btn_cadastro.disabled = true;
-    //img_aguarde.style.display='block';
     p4_mensagem.style.display='none';
 }
 
 function finalizar_aguardar(resposta) {
     btn_cadastro.disabled = false;
-    //img_aguarde.style.display='none';
     p4_mensagem.style.display='block';
 }
